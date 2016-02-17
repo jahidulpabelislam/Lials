@@ -1,10 +1,9 @@
 <?php
 	include '../../inc/all.php';
 
-	$username = $_GET['username'];
-	$goalID = $_GET['goalID'];
-
-	$query = "SELECT * FROM comment left join (select * from following where username1 = '${username}') as gf on comment.username = username2 WHERE goalID = '${goalID}' order by upload";
+	$goalID = $_REQUEST['goalID'];
+	
+	$query = "SELECT * FROM comment WHERE goalID = '${goalID}' order by upload, id";
 	$comments = $db->query($query);
 	$rows = $comments->fetchAll(PDO::FETCH_ASSOC);
 	/* $comments = $db->query("SELECT * FROM comment WHERE goalID = '" . $goal['id'] . "' order by upload");

@@ -1,9 +1,7 @@
 <?php
-	include '../inc/all.php';
+	include '../../../inc/all.php';
 	
-	$comment = $_POST['comment'];
+	$commentID = $_REQUEST['commentID'];
 	
-    $pdo->query("DELETE FROM comment where id=" . $comment);
-
-	$pdo = null;
+    $db->query("DELETE FROM comment where id=${commentID};");
 ?>

@@ -1,10 +1,24 @@
 <?php
 
 	include '../../inc/all.php';
-
-	$username = $_GET['username'];
-
-	$query = "SELECT * FROM goal left join (select * from following where username1 = '${username}') as gf on goal.username = username2  left join (select goalid from liked where username = '${username}') as gl on id = goalid order by upload";
+	$following = "";
+	$me = $_REQUEST['me'];
+	if (isset($_REQUEST['user'])) {
+		$user = $_REQUEST['user'];
+		$where = "goal.username = '${user}'";
+	}
+	
+	else if (isset($_REQUEST['search'])) {
+		$search = $_REQUEST['search'];
+		$where = "goal like '%${search}%'";
+	}
+	else {
+		$following = "left join (select * from following where username1 = '${me}') as gf on goal.username = username2";
+		$where = "username1 is not null or goal.username = '${me}'";
+	}
+	
+	$query = "SELECT * FROM goal ${following} left join (select goalid from liked where username = '${me}') as gl on id = goalid where ${where} order by upload, id;";
+	
 	$goals = $db->query($query);
 	$rows = $goals->fetchAll(PDO::FETCH_ASSOC);
 	/* if ($goals->rowCount() == 0) {	

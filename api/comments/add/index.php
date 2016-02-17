@@ -1,9 +1,9 @@
 <?php
 	include '../../../inc/all.php';
 	
-	$goalid = $_POST['goalID'];
-	$comment = $_POST['comment'];
-	$username = $_POST['username'];
+	$goalid = $_REQUEST['goalID'];
+	$comment = $_REQUEST['comment'];
+	$username = $_REQUEST['me'];
 	$upload = date("Y/m/d");
 
 	$query = "INSERT INTO comment (comment, goalid, username, upload) VALUES ('${comment}',${goalid},'${username}','${upload}')";

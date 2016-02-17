@@ -11,14 +11,14 @@
 	<body>
 		<header>
 			<div id="profileimgdiv">
-				<img id="profile" src="images/profile.svg" alt="Profile">
+				<img id="profileimg" src="images/profile.svg" alt="Profile">
 			</div>
 			<div id="logoimgdiv">
 				<img id="mobilelogo" src="images/mobilelogo.svg" alt="Logo">
 				<img id="logo" src="images/logo.svg" alt="Logo">
 			</div>
 			<div id="searchdiv">
-				<input form="searchform" name="search" autofocus placeholder="Type to Search for Goals..." id="search" type="text">
+				<input name="search" autofocus placeholder="Type to Search for Goals..." id="search" type="text">
 			</div>
 		</header>
 		<div id="writediv">
@@ -26,27 +26,31 @@
 				<label for="goal">Enter your Goal.</label>
 				<input type="text" name="goal" placeholder="I want to go USA!" autofocus required>
 				<label for="due">Enter the date you plan to finish goal.</label>
-				<input type="text" name="due" placeholder="2016/06/06" required>
+				<input type="date" name="due" placeholder="2016/06/06" required>
 				<button id="postgoal" type="button" value="Upload Goal">Upload Goal</button>
 			</form>
 		</div>
 		<div id="errors">
 		</div>
+		<div id="profile">
+			<p class="username">UP733474</p>
+			<img id="profilepicture" src="images/profilepicture.svg" alt="Profile">
+			<img id="profilepicture" src="images/private.svg" alt="Profile">
+			<img id="profilepicture" src="images/following.svg" alt="Profile">
+		</div>
 		<div id="goals">
 		</div>
 		<div id="formdiv">
-			<form id="loginform">
+			<form id="userform">
 				<label for="username">Username</label>
 			    <input type="text" name="username" placeholder="myusername" autofocus required>
 			    <label for="password">Password</label>
 			    <input type="password" name="password" placeholder="mypassword" required>
 			    <button id="signupbutton" type="button" value="Sign Up">Sign Up</button>
-			    <p id="orlogin">Or Log in</p>
 			    <button id="loginbutton" type="button" value="Log In">Log In</button>
-			    <p id="orsignup">Or Signup</p>
 			</form>
-			<div id="feedback">
-			</div>			
+			<p id="feedback">
+			</p>			
 		</div>
 		<script type="text/javascript" src="lib/xhr.js"></script>
 		<script type="text/javascript" src="lib/lials.js"></script>

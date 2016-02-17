@@ -1,9 +1,7 @@
 <?php
-	include '../inc/all.php';
+	include '../../../inc/all.php';
 	
-	$goal = $_POST['goal'];
+	$goalID = $_REQUEST['goalID'];
 	
-    $pdo->query("DELETE FROM goal where id=" . $goal . "; DELETE FROM comment where goalid =" . $goal);
-
-	$pdo = null;
+    $db->query("DELETE FROM comment where goalid = ${goalID}; DELETE FROM liked where goalid = ${goalID}; DELETE FROM goal where id = ${goalID};");
 ?>

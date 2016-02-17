@@ -1,10 +1,10 @@
 <?php
 	include '../../../inc/all.php';
 	
-	$goal = $_POST['goal'];
-	$due = $_POST['due'];
+	$goal = $_REQUEST['goal'];
+	$due = $_REQUEST['due'];
 	$upload = date("Y/m/d");
-	$username = $_POST['username'];
+	$username = $_REQUEST['me'];
 	
 	$query = "INSERT INTO goal (goal, due, upload, username) VALUES ('${goal}','${due}','${upload}','${username}');";
     $db->query($query);
