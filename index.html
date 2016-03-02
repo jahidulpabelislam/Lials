@@ -14,8 +14,8 @@
 				<img id="profileimg" src="images/profile.svg" alt="Profile">
 			</div>
 			<div id="logoimgdiv">
-				<img id="mobilelogo" src="images/mobilelogo.svg" alt="Logo">
-				<img id="logo" src="images/logo.svg" alt="Logo">
+				<img class="logo" id="mobilelogo" src="images/mobilelogo.svg" alt="Logo">
+				<img class="logo" id="logo" src="images/logo.svg" alt="Logo">
 			</div>
 			<div id="searchdiv">
 				<input name="search" autofocus placeholder="Type to Search for Goals..." id="search" type="text">
@@ -30,16 +30,10 @@
 				<button id="postgoal" type="button" value="Upload Goal">Upload Goal</button>
 			</form>
 		</div>
-		<div id="errors">
-		</div>
-		<div id="profile">
-			<p class="username">UP733474</p>
-			<img id="profilepicture" src="images/profilepicture.svg" alt="Profile">
-			<img id="profilepicture" src="images/private.svg" alt="Profile">
-			<img id="profilepicture" src="images/following.svg" alt="Profile">
-		</div>
-		<div id="goals">
-		</div>
+		<div id="errors"></div>
+		<div id="profile"></div>
+		<div id="uploads"></div>
+		<div id="goals"></div>
 		<div id="formdiv">
 			<form id="userform">
 				<label for="username">Username</label>
@@ -49,10 +43,11 @@
 			    <button id="signupbutton" type="button" value="Sign Up">Sign Up</button>
 			    <button id="loginbutton" type="button" value="Log In">Log In</button>
 			</form>
-			<p id="feedback">
-			</p>			
+			<p id="feedback"></p>			
 		</div>
+		<div id="dropzone"></div>
 		<script type="text/javascript" src="lib/xhr.js"></script>
 		<script type="text/javascript" src="lib/lials.js"></script>
+		<script type="text/javascript" src="lib/drag.js"></script>
 	</body>
 </html>

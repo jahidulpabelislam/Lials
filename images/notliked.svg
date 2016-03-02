@@ -7,11 +7,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   viewBox="0 0 462 401"
+   viewBox="0 0 50 50"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="unlike.svg">
+   sodipodi:docname="notliked.svg"
+   width="50"
+   height="50">
   <metadata
      id="metadata46">
     <rdf:RDF>
@@ -20,7 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -37,9 +39,9 @@
      inkscape:window-height="705"
      id="namedview44"
      showgrid="false"
-     inkscape:zoom="0.58852868"
-     inkscape:cx="485.02331"
-     inkscape:cy="168.08855"
+     inkscape:zoom="9.4164588"
+     inkscape:cx="37.76501"
+     inkscape:cy="24.074104"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -56,8 +58,8 @@
        height="1.21337"
        id="filter3763"
        width="1.18049"
-       x="-.09024"
-       y="-.10668">
+       x="-0.090240002"
+       y="-0.10668">
       <feGaussianBlur
          stdDeviation="6.89515"
          id="feGaussianBlur10" />
@@ -65,10 +67,10 @@
     <linearGradient
        gradientUnits="userSpaceOnUse"
        id="linearGradient5012"
-       x1="92.56227"
+       x1="92.562271"
        x2="-31.666"
-       y1="333.78682"
-       y2="25.53453"
+       y1="333.78683"
+       y2="25.534531"
        gradientTransform="matrix(1.03788,0,0,1.03788,215.57146,-17.511149)">
       <stop
          offset="0"
@@ -110,5 +112,5 @@
      style="fill:#e6e6e6;fill-opacity:1"
      inkscape:connector-curvature="0"
      id="path30"
-     d="M 125.08986,4.3324484 C 71.89722,5.4652615 25.625024,39.565274 8.8558437,97.298853 -20.95975,255.72712 143.84795,310.46725 233.79389,400.13533 311.88097,296.36279 474.47243,266.48726 457.12491,116.05524 450.48613,81.82832 431.76508,53.962929 406.66294,34.366488 373.02669,8.074857 326.17319,-0.96246362 286.13511,14.749072 264.71597,22.472797 245.20843,35.891579 230.6297,53.679936 205.29592,21.777879 165.24826,3.4350454 125.08986,4.3324484 Z" />
+     d="M 13.267886,3.2308054 C 7.4388401,3.3549436 2.3681633,7.0917476 0.53053457,13.418407 -2.7367681,30.77956 15.323468,36.778186 25.180076,46.604345 33.737146,35.232568 51.554518,31.958697 49.653512,15.473801 48.92601,11.723089 46.874489,8.6694968 44.123703,6.5220458 40.43772,3.6409132 35.30334,2.6505697 30.915819,4.3722968 28.568631,5.2186917 26.430923,6.6891711 24.833332,8.6384848 22.057163,5.1425409 17.668593,3.1324659 13.267886,3.2308054 Z" />
 </svg>

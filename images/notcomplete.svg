@@ -7,13 +7,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   viewBox="0 0 400 400"
+   viewBox="0 0 50 50"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="notcomplete.svg"
-   width="400"
-   height="400">
+   width="50"
+   height="50">
   <metadata
      id="metadata46">
     <rdf:RDF>
@@ -39,13 +39,13 @@
      inkscape:window-height="705"
      id="namedview44"
      showgrid="false"
-     inkscape:zoom="1.1770574"
-     inkscape:cx="250.19515"
-     inkscape:cy="189.3947"
+     inkscape:zoom="9.4164592"
+     inkscape:cx="50.376225"
+     inkscape:cy="28.268095"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g4182" />
+     inkscape:current-layer="g3339" />
   <defs
      id="defs4">
     <filter
@@ -110,25 +110,29 @@
   </defs>
   <g
      id="g4182"
-     transform="matrix(1.2264402,0,0,1.2529344,-57.218627,-47.793427)">
-    <rect
-       ry="12.287284"
-       rx="11.71251"
-       y="46.345219"
-       x="55.069084"
-       height="303.08633"
-       width="308.42944"
-       id="rect3799"
-       style="fill:none;fill-opacity:1;stroke:#e6e6e6;stroke-width:16.13402176;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <path
-       style="fill:#ececec;fill-rule:evenodd;stroke:#e6e6e6;stroke-width:16.13402184;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="M 59.123143,345.86857 356.29883,52.942672"
-       id="path4150"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#e6e6e6;stroke-width:16.13402184;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-       d="M 59.81586,52.264603 356.99155,344.51243"
-       id="path4152"
-       inkscape:connector-curvature="0" />
+     transform="matrix(1.2264402,0,0,1.2529344,-57.218627,-397.79343)">
+    <g
+       transform="matrix(0.64043375,0,0,0.62689133,-163.08947,80.930397)"
+       id="g3339">
+      <rect
+         style="fill:none;fill-opacity:1;stroke:#e6e6e6;stroke-width:3.18632054;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect3799"
+         width="60.39986"
+         height="60.364269"
+         x="329.23315"
+         y="379.0798"
+         rx="2.2936656"
+         ry="2.4472003" />
+      <path
+         style="fill:#ececec;fill-rule:evenodd;stroke:#e6e6e6;stroke-width:3.16763735;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 330.27789,438.43653 388.00306,380.3077"
+         id="path4150"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:#ececec;fill-rule:evenodd;stroke:#e6e6e6;stroke-width:3.16763735;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 387.86786,437.89571 330.14269,379.76688"
+         id="path4150-6"
+         inkscape:connector-curvature="0" />
+    </g>
   </g>
 </svg>

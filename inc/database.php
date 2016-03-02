@@ -7,7 +7,7 @@
 		echo 'Connection failed: ' . $failure->getMessage();
 	}
 	try {
-		$showquery = "show databases like '${dbase}'";
+		$showquery = "SHOW DATABASES LIKE '${dbase}'";
 		$showresult = $db->query($showquery);
 		if (!$showresult->fetch()) {
 			$db->query("CREATE DATABASE ${dbase}"); 

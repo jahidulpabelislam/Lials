@@ -1,65 +1,142 @@
 <?php
-
 	include '../../inc/all.php';
-	$following = "";
-	$me = $_REQUEST['me'];
-	if (isset($_REQUEST['user'])) {
-		$user = $_REQUEST['user'];
-		$where = "goal.username = '${user}'";
-	}
-	
-	else if (isset($_REQUEST['search'])) {
-		$search = $_REQUEST['search'];
-		$where = "goal like '%${search}%'";
-	}
-	else {
-		$following = "left join (select * from following where username1 = '${me}') as gf on goal.username = username2";
-		$where = "username1 is not null or goal.username = '${me}'";
-	}
-	
-	$query = "SELECT * FROM goal ${following} left join (select goalid from liked where username = '${me}') as gl on id = goalid where ${where} order by upload, id;";
-	
-	$goals = $db->query($query);
-	$rows = $goals->fetchAll(PDO::FETCH_ASSOC);
-	/* if ($goals->rowCount() == 0) {	
-		echo "<p>No Goals to view, Upload your goals or follow some people.</p>";
-	}
-	else {
-		while ($goal = $goals->fetch(PDO::FETCH_ASSOC)) {
-			echo "<div class='goal' id='" . $goal['id'] . "'><p class='goal'>" . $goal['goal'] . " </p><p class='due'>" . $goal['due'] ."</p><p class='username'>" . $goal['username'] . "</p><div class='images'><img class='comment' src='images/comment.svg' alt='Comment'>";
-			if ($goal['username'] != $username) {
-				$friend = $db->query("SELECT * FROM following WHERE username1 = '" . $username . "' and username2 = '" . $goal['username'] . "'");
-				if ($friend->rowCount() == 1) {
-					echo "<img class='add' src='images/remove.svg' alt='Add'>";
+
+	//get the method verb
+	$verb = $_SERVER['REQUEST_METHOD'];
+
+	//get the path to decide what happens
+    $path = explode('/', ltrim($_SERVER['PATH_INFO'], "/"));
+
+	switch ($verb) {
+        case "GET":
+        	$results = [];
+        	try {
+				$following = "";
+				$me = $_REQUEST['me'];
+				if (isset($_REQUEST['user'])) {
+					$user = $_REQUEST['user'];
+					$where = "Goal.Username = '${user}'";
+				}
+				else if (isset($_REQUEST['search'])) {
+					$search = $_REQUEST['search'];
+					$where = "Goal LIKE '%${search}%'";
 				}
 				else {
-					echo "<img class='add' src='images/add.svg' alt='Add'>";
-				}			
-				$like = $db->query("SELECT * FROM liked WHERE username = '" . $username . "' and goalid = '" . $goal['id'] . "'");
-				if ($like->rowCount() == 0) {
-					echo "<img class='like' src='images/unlike.svg' alt='Like'>";
+					$following = "LEFT JOIN (SELECT * FROM Following WHERE Username1 = '${me}') AS gf ON Goal.Username = Username2";
+					$where = "Username1 is not null OR Goal.Username = '${me}'";
 				}
-				else {
-					echo "<img class='like' src='images/like.svg' alt='Like'>";
-				}
+				
+				$query = "SELECT * FROM Goal ${following} LEFT JOIN (SELECT GoalID FROM Liked WHERE Username = '${me}') AS gl ON ID = GoalID WHERE ${where} ORDER BY Upload, ID;";
+				
+				$goals = $db->query($query);
+				$rows = $goals->fetchAll(PDO::FETCH_ASSOC);
+
+				$results["rows"] = $rows;
+				$results["meta"]["ok"] = true;
+				$results["meta"]["query"] = $query;
+				$results["meta"]["count"] = count($rows);
 			}
-			else {
-				if ($goal['complete'] == true) {
-					echo "<img class='complete' src='images/complete.svg' alt='Done'>";
-				}
-				else {
-					echo "<img class='complete' src='images/notcomplete.svg' alt='Done'>";
-				}
-				echo "<img class='editGoal' src='images/edit.svg' alt='Edit'>
-				<img class='deleteGoal' src='images/delete.svg' alt='Delete'>";
+			catch ( PDOException $failure ) { 
+				$results["meta"]["ok"] = false;
+        		$results["meta"]["exception"] = $failure;		       	
 			}
-			echo "</div><p class='upload'>" . $goal['upload'] . "</p>";
-			comments
-			echo "</div>";
-		} 
-	}*/
-	$results = [];
-	$results["rows"] = $rows;
-	header("Content-Type: application/json");
-    echo json_encode($results);
+
+			header("Content-Type: application/json");
+		    echo json_encode($results);
+
+		    break;
+		case "POST":
+			$results = [];
+			try {
+				$goal = $_REQUEST['goal'];
+				$due = $_REQUEST['due'];
+				$upload = date("Y/m/d");
+				$me = $_REQUEST['me'];
+
+				$results['meta']["action"] = "insert";
+
+				$query = "INSERT INTO Goal (Goal, Due, Upload, Username) VALUES ('${goal}','${due}','${upload}','${me}');";
+			    $row = $db->query($query);
+
+			    if (count($row) > 0) {
+			        $results['meta']["ok"] = true;
+			        $results['meta']["status"] = 201;
+			        $results['meta']["msg"] = "Created";
+			    }
+
+			    $id = $db->lastInsertId();
+
+			    $query = "SELECT * FROM Goal LEFT JOIN (SELECT GoalID FROM Liked WHERE Username = '${me}') AS gl ON ID = GoalID WHERE ID = ${id};";
+			    $goal = $db->query($query);
+			    $rows = $goal->fetchAll(PDO::FETCH_ASSOC);
+			    
+			    $results["rows"] = $rows;
+			}
+			catch ( PDOException $failure ) { 
+				$results["meta"]["ok"] = false;
+        		$results["meta"]["exception"] = $failure;		       	
+			}
+
+			header("Content-Type: application/json");
+		    echo json_encode($results);
+
+		    break;
+		case "PATCH":
+			$results = [];
+			try {
+				$goalID = $path[0];
+
+				if (isset($_REQUEST['completion'])) {
+					$results["rows"]["completion"] = "sgsdg";
+					$query = "UPDATE Goal SET Complete = NOT Complete WHERE ID = ${goalID};";
+				}
+				else if (isset($_REQUEST['goal'])) {
+					$goal = $_REQUEST['goal'];
+
+				    $query = "UPDATE Goal SET Goal = '${goal}' WHERE ID = ${goalID};";
+				}
+				$result = $db->query($query);
+
+				$results['meta']["action"] = "update";
+				$results['meta']["ok"] = (count($result->rowCount()) > 0);
+
+				$query = "SELECT * FROM Goal WHERE ID=${goalID};";
+				$goal = $db->query($query);
+				$row = $goal->fetchAll(PDO::FETCH_ASSOC);
+				    
+				$results["rows"] = $row;
+			}
+			catch ( PDOException $failure ) { 
+				$results["meta"]["ok"] = false;
+        		$results["meta"]["exception"] = $failure;		       	
+			}
+			
+			header("Content-Type: application/json");
+			echo json_encode($results);
+
+			break;
+		case "DELETE":
+			$results = [];
+			try {
+				$goalID = $path[0];
+				
+				$results['meta']["action"] = "delete";
+
+				$query = "DELETE FROM Comment WHERE GoalID = ${goalID}; DELETE FROM Liked WHERE GoalID = ${goalID}; DELETE FROM Goal WHERE ID = ${goalID};";
+			    $row = $db->query($query);
+
+			    $results["meta"]["ok"] = (count($row->rowCount()) > 0);
+			    $results["rows"]["GoalID"] = $goalID;
+
+			}
+		    catch ( PDOException $failure ) { 
+				$results["meta"]["ok"] = false;
+        		$results["meta"]["exception"] = $failure;		       	
+			}
+
+		    header("Content-Type: application/json");
+		    echo json_encode($results);
+
+		    break;
+	}
 ?>

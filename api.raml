@@ -1,0 +1,202 @@
+work on raml, make it simple, pass username through query, use filters
+make signin/login into juist 2 buttons
+seperte api functions to minimise code
+#%RAML 0.8
+---
+title: Lials API
+baseUri: http://lials.com/api/
+version: v1
+/users
+  description: A collection of users.
+	post:
+      description: Create a new user
+      queryParameters:
+        username:
+          displayName: Username
+          description: A username that should be stored.
+          type: string
+          required: true
+          example: jahidulislam
+        password:
+          displayName: Password
+          description: A password that should be stored.
+          type: string
+          required: true
+          example: mypassword
+        responses:
+            200:
+              body:
+                application/json:
+                  example: |
+                    {
+                      "meta": {
+                        "ok": true,
+                        "status": 201
+                        "message": "ok",
+                        "action": "POST",
+                      },
+                      "rows": {
+                        "username": "jahidulislam",
+                      },
+                    }
+  /{username}
+    get:
+      description: Retrieve a user
+      queryParameters:
+        password:
+          displayName: Password
+          description: A password that is be stored with username.
+          type: string
+          required: true
+          example: mypassword
+      responses:
+            200:
+              body:
+                application/json:
+                  example: |
+                    {
+                      "meta": {
+                        "ok": true,
+                        "status": 200
+                        "message": "ok",
+                        "action": "GET",
+                      },
+                      "rows": {
+                        "username": "jahidulislam",
+                      },
+                    }
+    delete:
+      description: Delete a user
+    patch:
+      description: Edit a users private
+/goals
+  description: A collection of users goals.
+  post:
+    description: Insert a goal
+    queryParameter:
+      goal:
+        displayName: Goal
+        description: The text of the goal
+        type: string
+        example: Visit England
+        required: true
+      due:
+        displayName: Due Date
+        description: The text of the goal
+        type: string
+        example: 2016/12/12
+        required: true
+      username:
+        displayName: Username
+        description: The username of user to add goal for
+        type: string
+        example: jahidul
+        required: true
+  get:
+    description: Get goals
+    queryParameter:
+      me:
+        displayName: Me
+        description: The username of the user
+        type: string
+        example: jahidul
+        required: true
+      user:
+        displayName: User
+        description: The username of the user to get goal of
+        type: string
+        example: Visit England
+        required: false
+      search:
+        displayName: Search
+        description: The text to search for in goals
+        type: string
+        example: Visit England
+        required: false
+    responses:
+      200:
+        body:
+          application/json:
+            example: |
+              {
+                "meta": {
+                  "ok": true,
+                  "status": 200
+                  "message": "ok",
+                  "action": "GET",
+                },
+                "rows": {
+                  "id": 12,
+                  "goal": "Vist England",
+                  "due": "2017/12/12",
+                  "upload": "2016/02/16",
+                  "username": "jahidulislam",
+                  "complete": false,
+                  "username1": jahidulislam,
+                  "username": null,
+                },
+              }   
+  /{goalID}
+    delete:
+      description: Delete a goal
+    patch:
+      description: Edit a goal
+/likes
+  post:
+    description: Insert a new like of a goal
+  delete:
+    description: delete a like of a goal
+/follows
+  post:
+    description: Insert a new follow
+  delete:
+    description: delete a follow
+/comments
+  get:
+    description: Get the comments of a goal defined by {goalID}
+  post:
+    description: Insert a comment into a goal defined by {goalID}
+    queryParameter:
+      comment:
+        displayName: Comment
+        description: The text of the Comment
+        type: string
+        example: Same I want to visit England as well
+        required: true
+  /{commentID}
+    patch:
+      description: Edit a comment defined by {commentID}
+      queryParameter:
+        comment:
+          displayName: Comment
+          description: The text of the Comment
+          type: string
+          example: Same I want to visit England as well
+          required: true
+    delete:
+      description: Delete the comment defined by {commentID}
+/profilepictures
+  patch:
+    description: Edit a users picture
+    queryParameters:
+      username:
+        displayName: Username
+        description: THe username of user to change picture
+        type: string
+        example: jahidul
+        required: true
+      picture:
+        displayName: Picture
+        description: A picture that should be added.
+        type: blob
+        required: true
+        example:
+  delete:
+    description: Delete a users picture
+    queryParameters:
+      username:
+        displayName: Username
+        description: THe username of user to change picture
+        type: string
+        example: jahidul
+        required: true

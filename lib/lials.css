@@ -83,9 +83,21 @@ input {
 	height: 100%;
 }
 
+#dropzone {
+	display: none;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	right:0;
+	top:0;
+	background: #666;
+	background: rgba(0,0,0,0.4);
+}
+
 /* For mobile phones & some are for tablets */
 #search {
 	height: 30px;
+	border: none;
 }
 
 #logo, #profile {
@@ -106,7 +118,7 @@ input {
 		width: 33%;
 	}
 
-	header div {
+	#search, #searchdiv, header div {
 		height: 100%;
 	}
 }
