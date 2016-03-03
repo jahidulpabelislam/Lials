@@ -1,0 +1,135 @@
+/* For all devices */
+body {
+	background-color: #E8E8E8;
+	max-width: 1200px;
+	margin: auto;
+	text-align: center;
+}
+
+header, #formdiv {
+	background-color: #00CC00;
+}
+
+header {
+	height: 100px;
+}
+
+#goals, #writediv {
+	margin: 20px;
+}
+
+.goal, #profile {
+	max-width: 640px;
+	background-color: white;
+	margin: auto;
+	padding: 5px;
+	margin-top: 20px;
+}
+
+#profilediv {
+	background-color: #D3D3D3;
+}
+	
+.upload, .username, .images {
+	width: 33%;
+	display: inline-block;
+	text-align: right;
+}
+
+.username {
+	text-align: left;
+}
+
+.images {
+	text-align: center;
+}
+
+#searchdiv {
+	width: 100%;
+	height: 30%;
+}
+
+#profileimdiv {
+	float: left;
+}
+
+.comment {
+	border-top-style: solid;
+	border-top-color: #00CC00;
+}
+
+header div {
+	height: 70%;
+	width: 49%;
+	display: inline-block;
+}
+
+img {
+	height: 100%;
+}
+
+.images img {
+	height: 24px;
+}
+
+input {
+	width: 99%;
+}
+
+#formdiv {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#dropzone {
+	display: none;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	right:0;
+	top:0;
+	background: #666;
+	background: rgba(0,0,0,0.4);
+}
+
+/* For mobile phones & some are for tablets */
+#search {
+	height: 30px;
+	border: none;
+}
+
+#logo, #profile {
+	display: none;
+}
+
+/* For tablets and some are for desktops */
+@media only screen and (min-width: 640px) {
+	header {
+		height: 70px;
+	}
+	
+	#searchdiv {
+		float: right;	
+	}
+
+	header div, #searchdiv {
+		width: 33%;
+	}
+
+	#search, #searchdiv, header div {
+		height: 100%;
+	}
+}
+
+/* For desktops */
+@media only screen and (min-width: 768px) {
+	#mobilelogo {
+		display: none;
+	}
+
+	#logo {
+		display: inline;
+	}
+}
