@@ -41,7 +41,7 @@
 				$upload = date("Y/m/d");
 
 				$query = "INSERT INTO Comment (Comment, Goalid, Username, Upload) VALUES ('${comment}',${goalid},'${username}','${upload}');";
-			    $db->query($query);
+			    $row = $db->query($query);
 
 			    if (count($row) > 0) {
 			        $results['meta']["ok"] = true;
