@@ -7,8 +7,9 @@
     switch ($verb) {
         case "POST":
             $results = [];
-            $results["meta"]["REQUEST"] = $_REQUEST;
-            $results["meta"]["FILES"] = $_FILES;
+            $results["meta"]["request"] = $_REQUEST;
+            $results["meta"]["files"] = $_FILES;
+            
             $username = $_REQUEST['username'];
 
             $directory = "uploads/";
