@@ -1,53 +1,53 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="author" content="Jahidul Pabel Islam">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Lials</title>
-		<link rel="stylesheet" type="text/css" href="lib/lials.css"/>
-		<link rel="icon" href="images/favicon.png">
-	</head>
-	<body>
-		<header>
-			<div id="profileimgdiv">
-				<img id="profileimg" src="images/profile.svg" alt="Profile">
-			</div>
-			<div id="logoimgdiv">
-				<img class="logo" id="mobilelogo" src="images/mobilelogo.svg" alt="Logo">
-				<img class="logo" id="logo" src="images/logo.svg" alt="Logo">
-			</div>
-			<div id="searchdiv">
-				<input name="search" autofocus placeholder="Type to Search for Goals..." id="search" type="text">
-			</div>
-		</header>
-		<div id="writediv">
-			<form id="goalform">
-				<label for="goal">Enter your Goal.</label>
-				<input type="text" name="goal" placeholder="I want to go USA!" autofocus required>
-				<label for="due">Enter the date you plan to finish goal.</label>
-				<input type="date" name="due" placeholder="2016/06/06" required>
-				<button id="postgoal" type="button" value="Upload Goal">Upload Goal</button>
-			</form>
-		</div>
-		<div id="errors"></div>
-		<div id="profile"></div>
-		<div id="uploads"></div>
-		<div id="goals"></div>
-		<div id="formdiv">
-			<form id="userform">
-				<label for="username">Username</label>
-			    <input type="text" name="username" placeholder="myusername" autofocus required>
-			    <label for="password">Password</label>
-			    <input type="password" name="password" placeholder="mypassword" required>
-			    <button id="signupbutton" type="button" value="Sign Up">Sign Up</button>
-			    <button id="loginbutton" type="button" value="Log In">Log In</button>
-			</form>
-			<p id="feedback"></p>			
-		</div>
-		<div id="dropzone"></div>
-		<script type="text/javascript" src="lib/xhr.js"></script>
-		<script type="text/javascript" src="lib/lials.js"></script>
-		<script type="text/javascript" src="lib/drag.js"></script>
-	</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jahidul Pabel Islam">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lials</title>
+    <link rel="stylesheet" type="text/css" href="lib/lials.css"/>
+    <link rel="icon" href="images/favicon.png">
+</head>
+<body>
+<header>
+    <div id="profileimgdiv">
+        <img id="profileimg" src="images/profile.svg" alt="Profile">
+    </div>
+    <div id="logoimgdiv">
+        <img class="logo" id="mobilelogo" src="images/mobilelogo.svg" alt="Logo">
+        <img class="logo" id="logo" src="images/logo.svg" alt="Logo">
+    </div>
+    <div id="searchdiv">
+        <input name="search" autofocus placeholder="Type to Search for Goals..." id="search" type="text">
+    </div>
+</header>
+<div id="writediv">
+    <form id="goalform">
+        <label for="goal">Enter your Goal.</label>
+        <input type="text" name="goal" id="goal" placeholder="I want to go USA!" autofocus>
+        <label for="due">Enter the date you plan to finish goal.</label>
+        <input type="date" name="due" id="due" placeholder="2016/06/06">
+        <button id="postgoal" type="button" value="Upload Goal">Upload Goal</button>
+    </form>
+</div>
+<div id="errors"></div>
+<div id="profile"></div>
+<div id="uploads"></div>
+<div id="goals"></div>
+<div id="userformdiv">
+    <form id="userform">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" myusername" autofocus>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="mypassword">
+        <button id="signupbutton" type="button" value="Sign Up">Sign Up</button>
+        <button id="loginbutton" type="button" value="Log In">Log In</button>
+    </form>
+    <p id="feedback"></p>
+</div>
+<div id="dropzone"></div>
+<script type="text/javascript" src="lib/xhr.js"></script>
+<script type="text/javascript" src="lib/lials.js"></script>
+<script type="text/javascript" src="lib/drag.js"></script>
+</body>
 </html>

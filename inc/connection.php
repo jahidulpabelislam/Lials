@@ -1,10 +1,10 @@
 <?php
-	$dsn = "mysql:host=localhost;charset-UTF-8";
-	$username = "root";
-	$password = "root";
-	$dbase = "Lials";
-	$createquery = "CREATE TABLE IF NOT EXISTS User (
-					Username VARCHAR(100) not null,
+const DSN = "mysql:host=localhost;charset-UTF-8";
+const USERNAME = "root";
+const PASSWORD = "root";
+const DBASE = "Lials";
+const CREATEQUERY = "CREATE TABLE IF NOT EXISTS User (
+                    Username VARCHAR(100) not null,
 					Password VARCHAR(500) not null,
 					Picture VARCHAR(50),
 					Private boolean not null,
