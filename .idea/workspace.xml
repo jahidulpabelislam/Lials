@@ -21,7 +21,90 @@
     <favorites_list name="Lials" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.2103448">
+              <caret line="270" column="0" selection-start-line="270" selection-start-column="0" selection-end-line="270" selection-end-column="0" />
+              <folding>
+                <marker date="1458134973408" expanded="true" signature="2988:3049" placeholder="SELECT Usern... User" />
+                <marker date="1458134973408" expanded="true" signature="3221:3258" placeholder="SELECT * FRO... User" />
+                <marker date="1458134973408" expanded="true" signature="3669:3792" placeholder="SELECT * FRO... User" />
+                <marker date="1458134973408" expanded="true" signature="3699:3742" placeholder="SELECT * FRO... Following" />
+                <marker date="1458134973408" expanded="true" signature="4051:4101" placeholder="INSERT INTO User... " />
+                <marker date="1458134973408" expanded="true" signature="4232:4275" placeholder="SELECT Usern... User" />
+                <marker date="1458134973408" expanded="true" signature="4232:4276" placeholder="SELECT Usern... User" />
+                <marker date="1458134973408" expanded="true" signature="4511:4566" placeholder="UPDATE User " />
+                <marker date="1458134973408" expanded="true" signature="4511:4567" placeholder="UPDATE User " />
+                <marker date="1458134973408" expanded="true" signature="4667:4709" placeholder="SELECT Priva... User" />
+                <marker date="1458134973408" expanded="true" signature="4667:4710" placeholder="SELECT Priva... User" />
+                <marker date="1458134973408" expanded="true" signature="5606:5755" placeholder="SELECT * FRO... Goal" />
+                <marker date="1458134973408" expanded="true" signature="6146:6209" placeholder="INSERT INTO Goal... " />
+                <marker date="1458134973408" expanded="true" signature="6549:6656" placeholder="SELECT * FRO... Goal" />
+                <marker date="1458134973408" expanded="true" signature="6549:6657" placeholder="SELECT * FRO... Goal" />
+                <marker date="1458134973408" expanded="true" signature="6579:6621" placeholder="SELECT GoalI... Liked" />
+                <marker date="1458134973408" expanded="true" signature="6579:6622" placeholder="SELECT GoalI... Liked" />
+                <marker date="1458134973408" expanded="true" signature="6937:6988" placeholder="UPDATE Goal " />
+                <marker date="1458134973408" expanded="true" signature="6937:6989" placeholder="UPDATE Goal " />
+                <marker date="1458134973408" expanded="true" signature="7102:7138" placeholder="UPDATE Goal " />
+                <marker date="1458134973408" expanded="true" signature="7102:7139" placeholder="UPDATE Goal " />
+                <marker date="1458134973408" expanded="true" signature="7364:7393" placeholder="SELECT * FRO... Goal" />
+                <marker date="1458134973408" expanded="true" signature="7364:7395" placeholder="SELECT * FRO... Goal" />
+                <marker date="1458134973408" expanded="true" signature="7673:7708" placeholder="DELETE FROM " />
+                <marker date="1458134973408" expanded="true" signature="7673:7709" placeholder="DELETE FROM " />
+                <marker date="1458134973408" expanded="true" signature="7711:7744" placeholder="DELETE FROM " />
+                <marker date="1458134973408" expanded="true" signature="7711:7745" placeholder="DELETE FROM " />
+                <marker date="1458134973408" expanded="true" signature="7747:7775" placeholder="DELETE FROM " />
+                <marker date="1458134973408" expanded="true" signature="7747:7776" placeholder="DELETE FROM " />
+                <marker date="1458134973408" expanded="true" signature="8149:8186" placeholder="SELECT * FRO... Comment" />
+                <marker date="1458134973408" expanded="true" signature="8149:8207" placeholder="SELECT * FRO... Comment" />
+                <marker date="1458134973408" expanded="true" signature="8666:8738" placeholder="INSERT INTO Comment... " />
+                <marker date="1458134973408" expanded="true" signature="9062:9190" placeholder="SELECT * FRO... Comment" />
+                <marker date="1458134973408" expanded="true" signature="9095:9138" placeholder="SELECT * FRO... Following" />
+                <marker date="1458134973408" expanded="true" signature="9517:9559" placeholder="UPDATE Comme... " />
+                <marker date="1458134973408" expanded="true" signature="9517:9560" placeholder="UPDATE Comme... " />
+                <marker date="1458134973408" expanded="true" signature="9754:9788" placeholder="SELECT * FRO... Comment" />
+                <marker date="1458134973408" expanded="true" signature="10097:10128" placeholder="DELETE FROM " />
+                <marker date="1458134973408" expanded="true" signature="10097:10129" placeholder="DELETE FROM " />
+                <marker date="1458134973408" expanded="true" signature="10553:10610" placeholder="INSERT INTO Following... " />
+                <marker date="1458134973408" expanded="true" signature="10887:10948" placeholder="SELECT * FRO... Following" />
+                <marker date="1458134973408" expanded="true" signature="11266:11324" placeholder="DELETE FROM " />
+                <marker date="1458134973408" expanded="true" signature="11266:11325" placeholder="DELETE FROM " />
+                <marker date="1458134973408" expanded="true" signature="11750:11800" placeholder="INSERT INTO Liked... " />
+                <marker date="1458134973408" expanded="true" signature="12075:12128" placeholder="SELECT * FRO... Liked" />
+                <marker date="1458134973408" expanded="true" signature="12442:12492" placeholder="DELETE FROM " />
+                <marker date="1458134973408" expanded="true" signature="12442:12493" placeholder="DELETE FROM " />
+                <marker date="1458134973408" expanded="true" signature="13470:13515" placeholder="UPDATE User " />
+                <marker date="1458134973408" expanded="true" signature="13470:13516" placeholder="UPDATE User " />
+                <marker date="1458134973408" expanded="true" signature="13833:13886" placeholder="SELECT Usern... User" />
+                <marker date="1458134973408" expanded="true" signature="14462:14510" placeholder="UPDATE User " />
+                <marker date="1458134973408" expanded="true" signature="14462:14511" placeholder="UPDATE User " />
+                <marker date="1458134973408" expanded="true" signature="14777:14814" placeholder="SELECT * FRO... User" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="io.php" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Documents/Downloads/linbeta-master/inc/io.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.115385">
+              <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="36" />
+              <folding>
+                <marker date="1454261029497" expanded="true" signature="2356:2415" placeholder="UPDATE entri... " />
+                <marker date="1454261029497" expanded="true" signature="2626:2686" placeholder="INSERT INTO entries... " />
+                <marker date="1454261029497" expanded="true" signature="3160:3191" placeholder="SELECT * FRO... entries" />
+                <marker date="1454261029497" expanded="true" signature="3560:3590" placeholder="DELETE from " />
+                <marker date="1454261029497" expanded="true" signature="4402:4461" placeholder="UPDATE entri... " />
+                <marker date="1454261029497" expanded="true" signature="4725:4756" placeholder="SELECT * FRO... entries" />
+                <marker date="1454261029497" expanded="true" signature="7601:7674" placeholder="SELECT * ${$... entries" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -87,8 +170,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -154,7 +237,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../DBPRIN/Submission3.txt" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/Downloads/linbeta-master/inc/io.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
@@ -197,6 +280,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2489019" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -208,7 +292,6 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -244,7 +327,123 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1458134973408" expanded="true" signature="2988:3049" placeholder="SELECT Usern... User" />
+            <marker date="1458134973408" expanded="true" signature="3221:3258" placeholder="SELECT * FRO... User" />
+            <marker date="1458134973408" expanded="true" signature="3669:3792" placeholder="SELECT * FRO... User" />
+            <marker date="1458134973408" expanded="true" signature="3699:3742" placeholder="SELECT * FRO... Following" />
+            <marker date="1458134973408" expanded="true" signature="4051:4101" placeholder="INSERT INTO User... " />
+            <marker date="1458134973408" expanded="true" signature="4232:4275" placeholder="SELECT Usern... User" />
+            <marker date="1458134973408" expanded="true" signature="4232:4276" placeholder="SELECT Usern... User" />
+            <marker date="1458134973408" expanded="true" signature="4511:4566" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="4511:4567" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="4667:4709" placeholder="SELECT Priva... User" />
+            <marker date="1458134973408" expanded="true" signature="4667:4710" placeholder="SELECT Priva... User" />
+            <marker date="1458134973408" expanded="true" signature="5606:5755" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="6146:6209" placeholder="INSERT INTO Goal... " />
+            <marker date="1458134973408" expanded="true" signature="6549:6656" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="6549:6657" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="6579:6621" placeholder="SELECT GoalI... Liked" />
+            <marker date="1458134973408" expanded="true" signature="6579:6622" placeholder="SELECT GoalI... Liked" />
+            <marker date="1458134973408" expanded="true" signature="6937:6988" placeholder="UPDATE Goal " />
+            <marker date="1458134973408" expanded="true" signature="6937:6989" placeholder="UPDATE Goal " />
+            <marker date="1458134973408" expanded="true" signature="7102:7138" placeholder="UPDATE Goal " />
+            <marker date="1458134973408" expanded="true" signature="7102:7139" placeholder="UPDATE Goal " />
+            <marker date="1458134973408" expanded="true" signature="7364:7393" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="7364:7395" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="7673:7708" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7673:7709" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7711:7744" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7711:7745" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7747:7775" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7747:7776" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="8149:8186" placeholder="SELECT * FRO... Comment" />
+            <marker date="1458134973408" expanded="true" signature="8149:8207" placeholder="SELECT * FRO... Comment" />
+            <marker date="1458134973408" expanded="true" signature="8666:8738" placeholder="INSERT INTO Comment... " />
+            <marker date="1458134973408" expanded="true" signature="9062:9190" placeholder="SELECT * FRO... Comment" />
+            <marker date="1458134973408" expanded="true" signature="9095:9138" placeholder="SELECT * FRO... Following" />
+            <marker date="1458134973408" expanded="true" signature="9517:9559" placeholder="UPDATE Comme... " />
+            <marker date="1458134973408" expanded="true" signature="9517:9560" placeholder="UPDATE Comme... " />
+            <marker date="1458134973408" expanded="true" signature="9754:9788" placeholder="SELECT * FRO... Comment" />
+            <marker date="1458134973408" expanded="true" signature="10097:10128" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="10097:10129" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="10553:10610" placeholder="INSERT INTO Following... " />
+            <marker date="1458134973408" expanded="true" signature="10887:10948" placeholder="SELECT * FRO... Following" />
+            <marker date="1458134973408" expanded="true" signature="11266:11324" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="11266:11325" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="11750:11800" placeholder="INSERT INTO Liked... " />
+            <marker date="1458134973408" expanded="true" signature="12075:12128" placeholder="SELECT * FRO... Liked" />
+            <marker date="1458134973408" expanded="true" signature="12442:12492" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="12442:12493" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="13470:13515" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="13470:13516" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="13833:13886" placeholder="SELECT Usern... User" />
+            <marker date="1458134973408" expanded="true" signature="14462:14510" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="14462:14511" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="14777:14814" placeholder="SELECT * FRO... User" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1458134973408" expanded="true" signature="2988:3049" placeholder="SELECT Usern... User" />
+            <marker date="1458134973408" expanded="true" signature="3221:3258" placeholder="SELECT * FRO... User" />
+            <marker date="1458134973408" expanded="true" signature="3669:3792" placeholder="SELECT * FRO... User" />
+            <marker date="1458134973408" expanded="true" signature="3699:3742" placeholder="SELECT * FRO... Following" />
+            <marker date="1458134973408" expanded="true" signature="4051:4101" placeholder="INSERT INTO User... " />
+            <marker date="1458134973408" expanded="true" signature="4232:4275" placeholder="SELECT Usern... User" />
+            <marker date="1458134973408" expanded="true" signature="4232:4276" placeholder="SELECT Usern... User" />
+            <marker date="1458134973408" expanded="true" signature="4511:4566" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="4511:4567" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="4667:4709" placeholder="SELECT Priva... User" />
+            <marker date="1458134973408" expanded="true" signature="4667:4710" placeholder="SELECT Priva... User" />
+            <marker date="1458134973408" expanded="true" signature="5606:5755" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="6146:6209" placeholder="INSERT INTO Goal... " />
+            <marker date="1458134973408" expanded="true" signature="6549:6656" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="6549:6657" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="6579:6621" placeholder="SELECT GoalI... Liked" />
+            <marker date="1458134973408" expanded="true" signature="6579:6622" placeholder="SELECT GoalI... Liked" />
+            <marker date="1458134973408" expanded="true" signature="6937:6988" placeholder="UPDATE Goal " />
+            <marker date="1458134973408" expanded="true" signature="6937:6989" placeholder="UPDATE Goal " />
+            <marker date="1458134973408" expanded="true" signature="7102:7138" placeholder="UPDATE Goal " />
+            <marker date="1458134973408" expanded="true" signature="7102:7139" placeholder="UPDATE Goal " />
+            <marker date="1458134973408" expanded="true" signature="7364:7393" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="7364:7395" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="7673:7708" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7673:7709" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7711:7744" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7711:7745" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7747:7775" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7747:7776" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="8149:8186" placeholder="SELECT * FRO... Comment" />
+            <marker date="1458134973408" expanded="true" signature="8149:8207" placeholder="SELECT * FRO... Comment" />
+            <marker date="1458134973408" expanded="true" signature="8666:8738" placeholder="INSERT INTO Comment... " />
+            <marker date="1458134973408" expanded="true" signature="9062:9190" placeholder="SELECT * FRO... Comment" />
+            <marker date="1458134973408" expanded="true" signature="9095:9138" placeholder="SELECT * FRO... Following" />
+            <marker date="1458134973408" expanded="true" signature="9517:9559" placeholder="UPDATE Comme... " />
+            <marker date="1458134973408" expanded="true" signature="9517:9560" placeholder="UPDATE Comme... " />
+            <marker date="1458134973408" expanded="true" signature="9754:9788" placeholder="SELECT * FRO... Comment" />
+            <marker date="1458134973408" expanded="true" signature="10097:10128" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="10097:10129" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="10553:10610" placeholder="INSERT INTO Following... " />
+            <marker date="1458134973408" expanded="true" signature="10887:10948" placeholder="SELECT * FRO... Following" />
+            <marker date="1458134973408" expanded="true" signature="11266:11324" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="11266:11325" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="11750:11800" placeholder="INSERT INTO Liked... " />
+            <marker date="1458134973408" expanded="true" signature="12075:12128" placeholder="SELECT * FRO... Liked" />
+            <marker date="1458134973408" expanded="true" signature="12442:12492" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="12442:12493" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="13470:13515" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="13470:13516" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="13833:13886" placeholder="SELECT Usern... User" />
+            <marker date="1458134973408" expanded="true" signature="14462:14510" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="14462:14511" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="14777:14814" placeholder="SELECT * FRO... User" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -252,7 +451,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="110" column="26" selection-start-line="110" selection-start-column="26" selection-end-line="110" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -260,7 +458,61 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1458134973408" expanded="true" signature="2988:3049" placeholder="SELECT Usern... User" />
+            <marker date="1458134973408" expanded="true" signature="3221:3258" placeholder="SELECT * FRO... User" />
+            <marker date="1458134973408" expanded="true" signature="3669:3792" placeholder="SELECT * FRO... User" />
+            <marker date="1458134973408" expanded="true" signature="3699:3742" placeholder="SELECT * FRO... Following" />
+            <marker date="1458134973408" expanded="true" signature="4051:4101" placeholder="INSERT INTO User... " />
+            <marker date="1458134973408" expanded="true" signature="4232:4275" placeholder="SELECT Usern... User" />
+            <marker date="1458134973408" expanded="true" signature="4232:4276" placeholder="SELECT Usern... User" />
+            <marker date="1458134973408" expanded="true" signature="4511:4566" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="4511:4567" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="4667:4709" placeholder="SELECT Priva... User" />
+            <marker date="1458134973408" expanded="true" signature="4667:4710" placeholder="SELECT Priva... User" />
+            <marker date="1458134973408" expanded="true" signature="5606:5755" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="6146:6209" placeholder="INSERT INTO Goal... " />
+            <marker date="1458134973408" expanded="true" signature="6549:6656" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="6549:6657" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="6579:6621" placeholder="SELECT GoalI... Liked" />
+            <marker date="1458134973408" expanded="true" signature="6579:6622" placeholder="SELECT GoalI... Liked" />
+            <marker date="1458134973408" expanded="true" signature="6937:6988" placeholder="UPDATE Goal " />
+            <marker date="1458134973408" expanded="true" signature="6937:6989" placeholder="UPDATE Goal " />
+            <marker date="1458134973408" expanded="true" signature="7102:7138" placeholder="UPDATE Goal " />
+            <marker date="1458134973408" expanded="true" signature="7102:7139" placeholder="UPDATE Goal " />
+            <marker date="1458134973408" expanded="true" signature="7364:7393" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="7364:7395" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="7673:7708" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7673:7709" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7711:7744" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7711:7745" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7747:7775" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7747:7776" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="8149:8186" placeholder="SELECT * FRO... Comment" />
+            <marker date="1458134973408" expanded="true" signature="8149:8207" placeholder="SELECT * FRO... Comment" />
+            <marker date="1458134973408" expanded="true" signature="8666:8738" placeholder="INSERT INTO Comment... " />
+            <marker date="1458134973408" expanded="true" signature="9062:9190" placeholder="SELECT * FRO... Comment" />
+            <marker date="1458134973408" expanded="true" signature="9095:9138" placeholder="SELECT * FRO... Following" />
+            <marker date="1458134973408" expanded="true" signature="9517:9559" placeholder="UPDATE Comme... " />
+            <marker date="1458134973408" expanded="true" signature="9517:9560" placeholder="UPDATE Comme... " />
+            <marker date="1458134973408" expanded="true" signature="9754:9788" placeholder="SELECT * FRO... Comment" />
+            <marker date="1458134973408" expanded="true" signature="10097:10128" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="10097:10129" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="10553:10610" placeholder="INSERT INTO Following... " />
+            <marker date="1458134973408" expanded="true" signature="10887:10948" placeholder="SELECT * FRO... Following" />
+            <marker date="1458134973408" expanded="true" signature="11266:11324" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="11266:11325" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="11750:11800" placeholder="INSERT INTO Liked... " />
+            <marker date="1458134973408" expanded="true" signature="12075:12128" placeholder="SELECT * FRO... Liked" />
+            <marker date="1458134973408" expanded="true" signature="12442:12492" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="12442:12493" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="13470:13515" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="13470:13516" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="13833:13886" placeholder="SELECT Usern... User" />
+            <marker date="1458134973408" expanded="true" signature="14462:14510" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="14462:14511" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="14777:14814" placeholder="SELECT * FRO... User" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -268,7 +520,61 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1458134973408" expanded="true" signature="2988:3049" placeholder="SELECT Usern... User" />
+            <marker date="1458134973408" expanded="true" signature="3221:3258" placeholder="SELECT * FRO... User" />
+            <marker date="1458134973408" expanded="true" signature="3669:3792" placeholder="SELECT * FRO... User" />
+            <marker date="1458134973408" expanded="true" signature="3699:3742" placeholder="SELECT * FRO... Following" />
+            <marker date="1458134973408" expanded="true" signature="4051:4101" placeholder="INSERT INTO User... " />
+            <marker date="1458134973408" expanded="true" signature="4232:4275" placeholder="SELECT Usern... User" />
+            <marker date="1458134973408" expanded="true" signature="4232:4276" placeholder="SELECT Usern... User" />
+            <marker date="1458134973408" expanded="true" signature="4511:4566" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="4511:4567" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="4667:4709" placeholder="SELECT Priva... User" />
+            <marker date="1458134973408" expanded="true" signature="4667:4710" placeholder="SELECT Priva... User" />
+            <marker date="1458134973408" expanded="true" signature="5606:5755" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="6146:6209" placeholder="INSERT INTO Goal... " />
+            <marker date="1458134973408" expanded="true" signature="6549:6656" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="6549:6657" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="6579:6621" placeholder="SELECT GoalI... Liked" />
+            <marker date="1458134973408" expanded="true" signature="6579:6622" placeholder="SELECT GoalI... Liked" />
+            <marker date="1458134973408" expanded="true" signature="6937:6988" placeholder="UPDATE Goal " />
+            <marker date="1458134973408" expanded="true" signature="6937:6989" placeholder="UPDATE Goal " />
+            <marker date="1458134973408" expanded="true" signature="7102:7138" placeholder="UPDATE Goal " />
+            <marker date="1458134973408" expanded="true" signature="7102:7139" placeholder="UPDATE Goal " />
+            <marker date="1458134973408" expanded="true" signature="7364:7393" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="7364:7395" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="7673:7708" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7673:7709" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7711:7744" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7711:7745" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7747:7775" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7747:7776" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="8149:8186" placeholder="SELECT * FRO... Comment" />
+            <marker date="1458134973408" expanded="true" signature="8149:8207" placeholder="SELECT * FRO... Comment" />
+            <marker date="1458134973408" expanded="true" signature="8666:8738" placeholder="INSERT INTO Comment... " />
+            <marker date="1458134973408" expanded="true" signature="9062:9190" placeholder="SELECT * FRO... Comment" />
+            <marker date="1458134973408" expanded="true" signature="9095:9138" placeholder="SELECT * FRO... Following" />
+            <marker date="1458134973408" expanded="true" signature="9517:9559" placeholder="UPDATE Comme... " />
+            <marker date="1458134973408" expanded="true" signature="9517:9560" placeholder="UPDATE Comme... " />
+            <marker date="1458134973408" expanded="true" signature="9754:9788" placeholder="SELECT * FRO... Comment" />
+            <marker date="1458134973408" expanded="true" signature="10097:10128" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="10097:10129" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="10553:10610" placeholder="INSERT INTO Following... " />
+            <marker date="1458134973408" expanded="true" signature="10887:10948" placeholder="SELECT * FRO... Following" />
+            <marker date="1458134973408" expanded="true" signature="11266:11324" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="11266:11325" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="11750:11800" placeholder="INSERT INTO Liked... " />
+            <marker date="1458134973408" expanded="true" signature="12075:12128" placeholder="SELECT * FRO... Liked" />
+            <marker date="1458134973408" expanded="true" signature="12442:12492" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="12442:12493" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="13470:13515" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="13470:13516" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="13833:13886" placeholder="SELECT Usern... User" />
+            <marker date="1458134973408" expanded="true" signature="14462:14510" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="14462:14511" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="14777:14814" placeholder="SELECT * FRO... User" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -283,7 +589,61 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1458134973408" expanded="true" signature="2988:3049" placeholder="SELECT Usern... User" />
+            <marker date="1458134973408" expanded="true" signature="3221:3258" placeholder="SELECT * FRO... User" />
+            <marker date="1458134973408" expanded="true" signature="3669:3792" placeholder="SELECT * FRO... User" />
+            <marker date="1458134973408" expanded="true" signature="3699:3742" placeholder="SELECT * FRO... Following" />
+            <marker date="1458134973408" expanded="true" signature="4051:4101" placeholder="INSERT INTO User... " />
+            <marker date="1458134973408" expanded="true" signature="4232:4275" placeholder="SELECT Usern... User" />
+            <marker date="1458134973408" expanded="true" signature="4232:4276" placeholder="SELECT Usern... User" />
+            <marker date="1458134973408" expanded="true" signature="4511:4566" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="4511:4567" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="4667:4709" placeholder="SELECT Priva... User" />
+            <marker date="1458134973408" expanded="true" signature="4667:4710" placeholder="SELECT Priva... User" />
+            <marker date="1458134973408" expanded="true" signature="5606:5755" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="6146:6209" placeholder="INSERT INTO Goal... " />
+            <marker date="1458134973408" expanded="true" signature="6549:6656" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="6549:6657" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="6579:6621" placeholder="SELECT GoalI... Liked" />
+            <marker date="1458134973408" expanded="true" signature="6579:6622" placeholder="SELECT GoalI... Liked" />
+            <marker date="1458134973408" expanded="true" signature="6937:6988" placeholder="UPDATE Goal " />
+            <marker date="1458134973408" expanded="true" signature="6937:6989" placeholder="UPDATE Goal " />
+            <marker date="1458134973408" expanded="true" signature="7102:7138" placeholder="UPDATE Goal " />
+            <marker date="1458134973408" expanded="true" signature="7102:7139" placeholder="UPDATE Goal " />
+            <marker date="1458134973408" expanded="true" signature="7364:7393" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="7364:7395" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="7673:7708" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7673:7709" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7711:7744" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7711:7745" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7747:7775" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7747:7776" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="8149:8186" placeholder="SELECT * FRO... Comment" />
+            <marker date="1458134973408" expanded="true" signature="8149:8207" placeholder="SELECT * FRO... Comment" />
+            <marker date="1458134973408" expanded="true" signature="8666:8738" placeholder="INSERT INTO Comment... " />
+            <marker date="1458134973408" expanded="true" signature="9062:9190" placeholder="SELECT * FRO... Comment" />
+            <marker date="1458134973408" expanded="true" signature="9095:9138" placeholder="SELECT * FRO... Following" />
+            <marker date="1458134973408" expanded="true" signature="9517:9559" placeholder="UPDATE Comme... " />
+            <marker date="1458134973408" expanded="true" signature="9517:9560" placeholder="UPDATE Comme... " />
+            <marker date="1458134973408" expanded="true" signature="9754:9788" placeholder="SELECT * FRO... Comment" />
+            <marker date="1458134973408" expanded="true" signature="10097:10128" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="10097:10129" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="10553:10610" placeholder="INSERT INTO Following... " />
+            <marker date="1458134973408" expanded="true" signature="10887:10948" placeholder="SELECT * FRO... Following" />
+            <marker date="1458134973408" expanded="true" signature="11266:11324" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="11266:11325" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="11750:11800" placeholder="INSERT INTO Liked... " />
+            <marker date="1458134973408" expanded="true" signature="12075:12128" placeholder="SELECT * FRO... Liked" />
+            <marker date="1458134973408" expanded="true" signature="12442:12492" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="12442:12493" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="13470:13515" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="13470:13516" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="13833:13886" placeholder="SELECT Usern... User" />
+            <marker date="1458134973408" expanded="true" signature="14462:14510" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="14462:14511" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="14777:14814" placeholder="SELECT * FRO... User" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -298,7 +658,61 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1458134973408" expanded="true" signature="2988:3049" placeholder="SELECT Usern... User" />
+            <marker date="1458134973408" expanded="true" signature="3221:3258" placeholder="SELECT * FRO... User" />
+            <marker date="1458134973408" expanded="true" signature="3669:3792" placeholder="SELECT * FRO... User" />
+            <marker date="1458134973408" expanded="true" signature="3699:3742" placeholder="SELECT * FRO... Following" />
+            <marker date="1458134973408" expanded="true" signature="4051:4101" placeholder="INSERT INTO User... " />
+            <marker date="1458134973408" expanded="true" signature="4232:4275" placeholder="SELECT Usern... User" />
+            <marker date="1458134973408" expanded="true" signature="4232:4276" placeholder="SELECT Usern... User" />
+            <marker date="1458134973408" expanded="true" signature="4511:4566" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="4511:4567" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="4667:4709" placeholder="SELECT Priva... User" />
+            <marker date="1458134973408" expanded="true" signature="4667:4710" placeholder="SELECT Priva... User" />
+            <marker date="1458134973408" expanded="true" signature="5606:5755" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="6146:6209" placeholder="INSERT INTO Goal... " />
+            <marker date="1458134973408" expanded="true" signature="6549:6656" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="6549:6657" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="6579:6621" placeholder="SELECT GoalI... Liked" />
+            <marker date="1458134973408" expanded="true" signature="6579:6622" placeholder="SELECT GoalI... Liked" />
+            <marker date="1458134973408" expanded="true" signature="6937:6988" placeholder="UPDATE Goal " />
+            <marker date="1458134973408" expanded="true" signature="6937:6989" placeholder="UPDATE Goal " />
+            <marker date="1458134973408" expanded="true" signature="7102:7138" placeholder="UPDATE Goal " />
+            <marker date="1458134973408" expanded="true" signature="7102:7139" placeholder="UPDATE Goal " />
+            <marker date="1458134973408" expanded="true" signature="7364:7393" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="7364:7395" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="7673:7708" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7673:7709" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7711:7744" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7711:7745" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7747:7775" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7747:7776" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="8149:8186" placeholder="SELECT * FRO... Comment" />
+            <marker date="1458134973408" expanded="true" signature="8149:8207" placeholder="SELECT * FRO... Comment" />
+            <marker date="1458134973408" expanded="true" signature="8666:8738" placeholder="INSERT INTO Comment... " />
+            <marker date="1458134973408" expanded="true" signature="9062:9190" placeholder="SELECT * FRO... Comment" />
+            <marker date="1458134973408" expanded="true" signature="9095:9138" placeholder="SELECT * FRO... Following" />
+            <marker date="1458134973408" expanded="true" signature="9517:9559" placeholder="UPDATE Comme... " />
+            <marker date="1458134973408" expanded="true" signature="9517:9560" placeholder="UPDATE Comme... " />
+            <marker date="1458134973408" expanded="true" signature="9754:9788" placeholder="SELECT * FRO... Comment" />
+            <marker date="1458134973408" expanded="true" signature="10097:10128" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="10097:10129" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="10553:10610" placeholder="INSERT INTO Following... " />
+            <marker date="1458134973408" expanded="true" signature="10887:10948" placeholder="SELECT * FRO... Following" />
+            <marker date="1458134973408" expanded="true" signature="11266:11324" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="11266:11325" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="11750:11800" placeholder="INSERT INTO Liked... " />
+            <marker date="1458134973408" expanded="true" signature="12075:12128" placeholder="SELECT * FRO... Liked" />
+            <marker date="1458134973408" expanded="true" signature="12442:12492" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="12442:12493" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="13470:13515" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="13470:13516" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="13833:13886" placeholder="SELECT Usern... User" />
+            <marker date="1458134973408" expanded="true" signature="14462:14510" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="14462:14511" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="14777:14814" placeholder="SELECT * FRO... User" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -306,7 +720,61 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1458134973408" expanded="true" signature="2988:3049" placeholder="SELECT Usern... User" />
+            <marker date="1458134973408" expanded="true" signature="3221:3258" placeholder="SELECT * FRO... User" />
+            <marker date="1458134973408" expanded="true" signature="3669:3792" placeholder="SELECT * FRO... User" />
+            <marker date="1458134973408" expanded="true" signature="3699:3742" placeholder="SELECT * FRO... Following" />
+            <marker date="1458134973408" expanded="true" signature="4051:4101" placeholder="INSERT INTO User... " />
+            <marker date="1458134973408" expanded="true" signature="4232:4275" placeholder="SELECT Usern... User" />
+            <marker date="1458134973408" expanded="true" signature="4232:4276" placeholder="SELECT Usern... User" />
+            <marker date="1458134973408" expanded="true" signature="4511:4566" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="4511:4567" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="4667:4709" placeholder="SELECT Priva... User" />
+            <marker date="1458134973408" expanded="true" signature="4667:4710" placeholder="SELECT Priva... User" />
+            <marker date="1458134973408" expanded="true" signature="5606:5755" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="6146:6209" placeholder="INSERT INTO Goal... " />
+            <marker date="1458134973408" expanded="true" signature="6549:6656" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="6549:6657" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="6579:6621" placeholder="SELECT GoalI... Liked" />
+            <marker date="1458134973408" expanded="true" signature="6579:6622" placeholder="SELECT GoalI... Liked" />
+            <marker date="1458134973408" expanded="true" signature="6937:6988" placeholder="UPDATE Goal " />
+            <marker date="1458134973408" expanded="true" signature="6937:6989" placeholder="UPDATE Goal " />
+            <marker date="1458134973408" expanded="true" signature="7102:7138" placeholder="UPDATE Goal " />
+            <marker date="1458134973408" expanded="true" signature="7102:7139" placeholder="UPDATE Goal " />
+            <marker date="1458134973408" expanded="true" signature="7364:7393" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="7364:7395" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="7673:7708" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7673:7709" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7711:7744" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7711:7745" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7747:7775" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7747:7776" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="8149:8186" placeholder="SELECT * FRO... Comment" />
+            <marker date="1458134973408" expanded="true" signature="8149:8207" placeholder="SELECT * FRO... Comment" />
+            <marker date="1458134973408" expanded="true" signature="8666:8738" placeholder="INSERT INTO Comment... " />
+            <marker date="1458134973408" expanded="true" signature="9062:9190" placeholder="SELECT * FRO... Comment" />
+            <marker date="1458134973408" expanded="true" signature="9095:9138" placeholder="SELECT * FRO... Following" />
+            <marker date="1458134973408" expanded="true" signature="9517:9559" placeholder="UPDATE Comme... " />
+            <marker date="1458134973408" expanded="true" signature="9517:9560" placeholder="UPDATE Comme... " />
+            <marker date="1458134973408" expanded="true" signature="9754:9788" placeholder="SELECT * FRO... Comment" />
+            <marker date="1458134973408" expanded="true" signature="10097:10128" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="10097:10129" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="10553:10610" placeholder="INSERT INTO Following... " />
+            <marker date="1458134973408" expanded="true" signature="10887:10948" placeholder="SELECT * FRO... Following" />
+            <marker date="1458134973408" expanded="true" signature="11266:11324" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="11266:11325" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="11750:11800" placeholder="INSERT INTO Liked... " />
+            <marker date="1458134973408" expanded="true" signature="12075:12128" placeholder="SELECT * FRO... Liked" />
+            <marker date="1458134973408" expanded="true" signature="12442:12492" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="12442:12493" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="13470:13515" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="13470:13516" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="13833:13886" placeholder="SELECT Usern... User" />
+            <marker date="1458134973408" expanded="true" signature="14462:14510" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="14462:14511" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="14777:14814" placeholder="SELECT * FRO... User" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -314,7 +782,61 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1458134973408" expanded="true" signature="2988:3049" placeholder="SELECT Usern... User" />
+            <marker date="1458134973408" expanded="true" signature="3221:3258" placeholder="SELECT * FRO... User" />
+            <marker date="1458134973408" expanded="true" signature="3669:3792" placeholder="SELECT * FRO... User" />
+            <marker date="1458134973408" expanded="true" signature="3699:3742" placeholder="SELECT * FRO... Following" />
+            <marker date="1458134973408" expanded="true" signature="4051:4101" placeholder="INSERT INTO User... " />
+            <marker date="1458134973408" expanded="true" signature="4232:4275" placeholder="SELECT Usern... User" />
+            <marker date="1458134973408" expanded="true" signature="4232:4276" placeholder="SELECT Usern... User" />
+            <marker date="1458134973408" expanded="true" signature="4511:4566" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="4511:4567" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="4667:4709" placeholder="SELECT Priva... User" />
+            <marker date="1458134973408" expanded="true" signature="4667:4710" placeholder="SELECT Priva... User" />
+            <marker date="1458134973408" expanded="true" signature="5606:5755" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="6146:6209" placeholder="INSERT INTO Goal... " />
+            <marker date="1458134973408" expanded="true" signature="6549:6656" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="6549:6657" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="6579:6621" placeholder="SELECT GoalI... Liked" />
+            <marker date="1458134973408" expanded="true" signature="6579:6622" placeholder="SELECT GoalI... Liked" />
+            <marker date="1458134973408" expanded="true" signature="6937:6988" placeholder="UPDATE Goal " />
+            <marker date="1458134973408" expanded="true" signature="6937:6989" placeholder="UPDATE Goal " />
+            <marker date="1458134973408" expanded="true" signature="7102:7138" placeholder="UPDATE Goal " />
+            <marker date="1458134973408" expanded="true" signature="7102:7139" placeholder="UPDATE Goal " />
+            <marker date="1458134973408" expanded="true" signature="7364:7393" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="7364:7395" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="7673:7708" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7673:7709" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7711:7744" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7711:7745" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7747:7775" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7747:7776" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="8149:8186" placeholder="SELECT * FRO... Comment" />
+            <marker date="1458134973408" expanded="true" signature="8149:8207" placeholder="SELECT * FRO... Comment" />
+            <marker date="1458134973408" expanded="true" signature="8666:8738" placeholder="INSERT INTO Comment... " />
+            <marker date="1458134973408" expanded="true" signature="9062:9190" placeholder="SELECT * FRO... Comment" />
+            <marker date="1458134973408" expanded="true" signature="9095:9138" placeholder="SELECT * FRO... Following" />
+            <marker date="1458134973408" expanded="true" signature="9517:9559" placeholder="UPDATE Comme... " />
+            <marker date="1458134973408" expanded="true" signature="9517:9560" placeholder="UPDATE Comme... " />
+            <marker date="1458134973408" expanded="true" signature="9754:9788" placeholder="SELECT * FRO... Comment" />
+            <marker date="1458134973408" expanded="true" signature="10097:10128" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="10097:10129" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="10553:10610" placeholder="INSERT INTO Following... " />
+            <marker date="1458134973408" expanded="true" signature="10887:10948" placeholder="SELECT * FRO... Following" />
+            <marker date="1458134973408" expanded="true" signature="11266:11324" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="11266:11325" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="11750:11800" placeholder="INSERT INTO Liked... " />
+            <marker date="1458134973408" expanded="true" signature="12075:12128" placeholder="SELECT * FRO... Liked" />
+            <marker date="1458134973408" expanded="true" signature="12442:12492" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="12442:12493" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="13470:13515" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="13470:13516" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="13833:13886" placeholder="SELECT Usern... User" />
+            <marker date="1458134973408" expanded="true" signature="14462:14510" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="14462:14511" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="14777:14814" placeholder="SELECT * FRO... User" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -329,7 +851,61 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1458134973408" expanded="true" signature="2988:3049" placeholder="SELECT Usern... User" />
+            <marker date="1458134973408" expanded="true" signature="3221:3258" placeholder="SELECT * FRO... User" />
+            <marker date="1458134973408" expanded="true" signature="3669:3792" placeholder="SELECT * FRO... User" />
+            <marker date="1458134973408" expanded="true" signature="3699:3742" placeholder="SELECT * FRO... Following" />
+            <marker date="1458134973408" expanded="true" signature="4051:4101" placeholder="INSERT INTO User... " />
+            <marker date="1458134973408" expanded="true" signature="4232:4275" placeholder="SELECT Usern... User" />
+            <marker date="1458134973408" expanded="true" signature="4232:4276" placeholder="SELECT Usern... User" />
+            <marker date="1458134973408" expanded="true" signature="4511:4566" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="4511:4567" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="4667:4709" placeholder="SELECT Priva... User" />
+            <marker date="1458134973408" expanded="true" signature="4667:4710" placeholder="SELECT Priva... User" />
+            <marker date="1458134973408" expanded="true" signature="5606:5755" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="6146:6209" placeholder="INSERT INTO Goal... " />
+            <marker date="1458134973408" expanded="true" signature="6549:6656" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="6549:6657" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="6579:6621" placeholder="SELECT GoalI... Liked" />
+            <marker date="1458134973408" expanded="true" signature="6579:6622" placeholder="SELECT GoalI... Liked" />
+            <marker date="1458134973408" expanded="true" signature="6937:6988" placeholder="UPDATE Goal " />
+            <marker date="1458134973408" expanded="true" signature="6937:6989" placeholder="UPDATE Goal " />
+            <marker date="1458134973408" expanded="true" signature="7102:7138" placeholder="UPDATE Goal " />
+            <marker date="1458134973408" expanded="true" signature="7102:7139" placeholder="UPDATE Goal " />
+            <marker date="1458134973408" expanded="true" signature="7364:7393" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="7364:7395" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="7673:7708" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7673:7709" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7711:7744" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7711:7745" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7747:7775" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7747:7776" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="8149:8186" placeholder="SELECT * FRO... Comment" />
+            <marker date="1458134973408" expanded="true" signature="8149:8207" placeholder="SELECT * FRO... Comment" />
+            <marker date="1458134973408" expanded="true" signature="8666:8738" placeholder="INSERT INTO Comment... " />
+            <marker date="1458134973408" expanded="true" signature="9062:9190" placeholder="SELECT * FRO... Comment" />
+            <marker date="1458134973408" expanded="true" signature="9095:9138" placeholder="SELECT * FRO... Following" />
+            <marker date="1458134973408" expanded="true" signature="9517:9559" placeholder="UPDATE Comme... " />
+            <marker date="1458134973408" expanded="true" signature="9517:9560" placeholder="UPDATE Comme... " />
+            <marker date="1458134973408" expanded="true" signature="9754:9788" placeholder="SELECT * FRO... Comment" />
+            <marker date="1458134973408" expanded="true" signature="10097:10128" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="10097:10129" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="10553:10610" placeholder="INSERT INTO Following... " />
+            <marker date="1458134973408" expanded="true" signature="10887:10948" placeholder="SELECT * FRO... Following" />
+            <marker date="1458134973408" expanded="true" signature="11266:11324" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="11266:11325" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="11750:11800" placeholder="INSERT INTO Liked... " />
+            <marker date="1458134973408" expanded="true" signature="12075:12128" placeholder="SELECT * FRO... Liked" />
+            <marker date="1458134973408" expanded="true" signature="12442:12492" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="12442:12493" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="13470:13515" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="13470:13516" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="13833:13886" placeholder="SELECT Usern... User" />
+            <marker date="1458134973408" expanded="true" signature="14462:14510" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="14462:14511" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="14777:14814" placeholder="SELECT * FRO... User" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -439,19 +1015,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2805281">
-          <caret line="100" column="27" selection-start-line="100" selection-start-column="27" selection-end-line="100" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/lials.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.028052805">
           <caret line="110" column="26" selection-start-line="110" selection-start-column="26" selection-end-line="110" selection-end-column="26" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/Downloads/linbeta-master/inc/io.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.115385">
+          <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="36" />
+          <folding>
+            <marker date="1454261029497" expanded="true" signature="2356:2415" placeholder="UPDATE entri... " />
+            <marker date="1454261029497" expanded="true" signature="2626:2686" placeholder="INSERT INTO entries... " />
+            <marker date="1454261029497" expanded="true" signature="3160:3191" placeholder="SELECT * FRO... entries" />
+            <marker date="1454261029497" expanded="true" signature="3560:3590" placeholder="DELETE from " />
+            <marker date="1454261029497" expanded="true" signature="4402:4461" placeholder="UPDATE entri... " />
+            <marker date="1454261029497" expanded="true" signature="4725:4756" placeholder="SELECT * FRO... entries" />
+            <marker date="1454261029497" expanded="true" signature="7601:7674" placeholder="SELECT * ${$... entries" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2103448">
+          <caret line="270" column="0" selection-start-line="270" selection-start-column="0" selection-end-line="270" selection-end-column="0" />
+          <folding>
+            <marker date="1458134973408" expanded="true" signature="2988:3049" placeholder="SELECT Usern... User" />
+            <marker date="1458134973408" expanded="true" signature="3221:3258" placeholder="SELECT * FRO... User" />
+            <marker date="1458134973408" expanded="true" signature="3669:3792" placeholder="SELECT * FRO... User" />
+            <marker date="1458134973408" expanded="true" signature="3699:3742" placeholder="SELECT * FRO... Following" />
+            <marker date="1458134973408" expanded="true" signature="4051:4101" placeholder="INSERT INTO User... " />
+            <marker date="1458134973408" expanded="true" signature="4232:4275" placeholder="SELECT Usern... User" />
+            <marker date="1458134973408" expanded="true" signature="4232:4276" placeholder="SELECT Usern... User" />
+            <marker date="1458134973408" expanded="true" signature="4511:4566" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="4511:4567" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="4667:4709" placeholder="SELECT Priva... User" />
+            <marker date="1458134973408" expanded="true" signature="4667:4710" placeholder="SELECT Priva... User" />
+            <marker date="1458134973408" expanded="true" signature="5606:5755" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="6146:6209" placeholder="INSERT INTO Goal... " />
+            <marker date="1458134973408" expanded="true" signature="6549:6656" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="6549:6657" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="6579:6621" placeholder="SELECT GoalI... Liked" />
+            <marker date="1458134973408" expanded="true" signature="6579:6622" placeholder="SELECT GoalI... Liked" />
+            <marker date="1458134973408" expanded="true" signature="6937:6988" placeholder="UPDATE Goal " />
+            <marker date="1458134973408" expanded="true" signature="6937:6989" placeholder="UPDATE Goal " />
+            <marker date="1458134973408" expanded="true" signature="7102:7138" placeholder="UPDATE Goal " />
+            <marker date="1458134973408" expanded="true" signature="7102:7139" placeholder="UPDATE Goal " />
+            <marker date="1458134973408" expanded="true" signature="7364:7393" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="7364:7395" placeholder="SELECT * FRO... Goal" />
+            <marker date="1458134973408" expanded="true" signature="7673:7708" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7673:7709" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7711:7744" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7711:7745" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7747:7775" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="7747:7776" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="8149:8186" placeholder="SELECT * FRO... Comment" />
+            <marker date="1458134973408" expanded="true" signature="8149:8207" placeholder="SELECT * FRO... Comment" />
+            <marker date="1458134973408" expanded="true" signature="8666:8738" placeholder="INSERT INTO Comment... " />
+            <marker date="1458134973408" expanded="true" signature="9062:9190" placeholder="SELECT * FRO... Comment" />
+            <marker date="1458134973408" expanded="true" signature="9095:9138" placeholder="SELECT * FRO... Following" />
+            <marker date="1458134973408" expanded="true" signature="9517:9559" placeholder="UPDATE Comme... " />
+            <marker date="1458134973408" expanded="true" signature="9517:9560" placeholder="UPDATE Comme... " />
+            <marker date="1458134973408" expanded="true" signature="9754:9788" placeholder="SELECT * FRO... Comment" />
+            <marker date="1458134973408" expanded="true" signature="10097:10128" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="10097:10129" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="10553:10610" placeholder="INSERT INTO Following... " />
+            <marker date="1458134973408" expanded="true" signature="10887:10948" placeholder="SELECT * FRO... Following" />
+            <marker date="1458134973408" expanded="true" signature="11266:11324" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="11266:11325" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="11750:11800" placeholder="INSERT INTO Liked... " />
+            <marker date="1458134973408" expanded="true" signature="12075:12128" placeholder="SELECT * FRO... Liked" />
+            <marker date="1458134973408" expanded="true" signature="12442:12492" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="12442:12493" placeholder="DELETE FROM " />
+            <marker date="1458134973408" expanded="true" signature="13470:13515" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="13470:13516" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="13833:13886" placeholder="SELECT Usern... User" />
+            <marker date="1458134973408" expanded="true" signature="14462:14510" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="14462:14511" placeholder="UPDATE User " />
+            <marker date="1458134973408" expanded="true" signature="14777:14814" placeholder="SELECT * FRO... User" />
+          </folding>
         </state>
       </provider>
     </entry>

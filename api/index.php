@@ -19,7 +19,6 @@ switch ($path[0]) {
                 break;
             case "POST":
                 $results = addUser($requests);
-                $results["afdaf"]= $requests;
                 break;
             case "PATCH":
                 $requests["username"] = $path[1];
@@ -94,6 +93,9 @@ switch ($path[0]) {
         }
         break;
 }
+$status = $results["status"];
+$message = $results["message"];
+header("HTTP/1.1 $status $message");
 
 header("Content-Type: application/json");
 echo json_encode($results);
@@ -131,14 +133,14 @@ function addUser($requests)
 {
     $db = new pdodb;
     $results = [];
-    $username = $requests["username"];
-    $password = $requests["password"];
 
-    $query = "INSERT INTO User (Username, Password) VALUES ('${username}','${password}');";
-    $user = $db->query($query);
+    $query = "INSERT INTO User (Username, Password) VALUES (?,?);";
+    $bindings = array($requests["username"], $requests["password"]);
+    $user = $db->query($query, $bindings);
 
-    $query = "SELECT Username FROM User WHERE Username = '${username}';";
-    $user = $db->query($query);
+    $query = "SELECT Username FROM User WHERE Username = ?;";
+    $bindings = array($requests["username"]);
+    $user = $db->query($query, $bindings);
 
     $results["rows"] = $user;
 
@@ -149,13 +151,14 @@ function editUser($requests)
 {
     $db = new pdodb;
     $results = [];
-    $username = $requests["username"];
 
-    $query = "UPDATE User SET Private = NOT Private WHERE Username = '${username}';";
-    $db->query($query);
+    $query = "UPDATE User SET Private = NOT Private WHERE Username = ?;";
+    $bindings = array($requests["username"]);
+    $db->query($query, $bindings);
 
-    $query = "SELECT Private FROM User WHERE Username = '${username}';";
-    $user = $db->query($query);
+    $query = "SELECT Private FROM User WHERE Username = ?;";
+    $bindings = array($requests["username"]);
+    $user = $db->query($query, $bindings);
 
     $results["rows"] = $user;
 
@@ -200,16 +203,13 @@ function addGoal($requests)
 {
     $db = new pdodb;
     $results = [];
-    $goal = $requests['goal'];
-    $due = $requests['due'];
-    $upload = date("Y/m/d");
-    $me = $requests['me'];
 
     $results['meta']["request"] = $requests;
     $results['meta']["action"] = "insert";
 
-    $query = "INSERT INTO Goal (Goal, Due, Upload, Username) VALUES ('${goal}','${due}','${upload}','${me}');";
-    $goal = $db->query($query);
+    $query = "INSERT INTO Goal (Goal, Due, Upload, Username) VALUES (?,?,?,?);";
+    $bindings = array($requests["goal"], $requests["due"], date("y/m/d"), $requests["me"]);
+    $goal = $db->query($query, $bindings);
 
     if ($goal > 0) {
         $results['meta']["ok"] = true;
@@ -219,8 +219,9 @@ function addGoal($requests)
 
     $id = $db->lastInsertId();
 
-    $query = "SELECT * FROM Goal LEFT JOIN (SELECT GoalID FROM Liked WHERE Username = '${me}') AS gl ON ID = GoalID WHERE ID = ${id};";
-    $goal = $db->query($query);
+    $query = "SELECT * FROM Goal LEFT JOIN (SELECT GoalID FROM Liked WHERE Username = ?) AS gl ON ID = GoalID WHERE ID = ?;";
+    $bindings = array($requests["me"], $id);
+    $goal = $db->query($query, $bindings);
 
     $results["rows"] = $goal;
 
@@ -231,23 +232,22 @@ function editGoal($requests)
 {
     $db = new pdodb;
     $results = [];
-    $goalID = $requests["goalID"];
 
     if (isset($requests['completion'])) {
-        $results["rows"]["completion"] = "sgsdg";
-        $query = "UPDATE Goal SET Complete = NOT Complete WHERE ID = ${goalID};";
+        $query = "UPDATE Goal SET Complete = NOT Complete WHERE ID = ?;";
+        $bindings = array($requests["goalID"]);
     } else if (isset($requests['goal'])) {
-        $goal = $_REQUEST['goal'];
-
-        $query = "UPDATE Goal SET Goal = '${goal}' WHERE ID = ${goalID};";
+        $query = "UPDATE Goal SET Goal = ? WHERE ID = ?;";
+        $bindings = array($requests["goal"], $requests["goalID"]);
     }
-    $result = $db->query($query);
+    $result = $db->query($query, $bindings);
 
     $results['meta']["action"] = "update";
     $results['meta']["ok"] = ($result > 0);
 
-    $query = "SELECT * FROM Goal WHERE ID=${goalID};";
-    $goal = $db->query($query);
+    $query = "SELECT * FROM Goal WHERE ID = ?;";
+    $bindings = array($requests["goalID"]);
+    $goal = $db->query($query, $bindings);
 
     $results["rows"] = $goal;
 
@@ -258,15 +258,15 @@ function deleteGoal($requests)
 {
     $db = new pdodb;
     $results = [];
-    $goalID = $requests["goalID"];
-
     $results['meta']["action"] = "delete";
 
-    $query = "DELETE FROM Comment WHERE GoalID = ${goalID}; DELETE FROM Liked WHERE GoalID = ${goalID}; DELETE FROM Goal WHERE ID = ${goalID};";
-    $row = $db->query($query);
-
-    $results["meta"]["ok"] = (count($row) > 0);
-    $results["rows"]["GoalID"] = $goalID;
+    $query = "DELETE FROM Comment WHERE GoalID = ?; DELETE FROM Liked WHERE GoalID = ?; DELETE FROM Goal WHERE ID = ?;";
+    $bindings = array($requests["goalID"], $requests["goalID"], $requests["goalID"]);
+    $row = $db->query($query, $bindings);
+     if ($row > 0) {
+         $results["meta"]["ok"] = true;
+         $results["rows"]["GoalID"] = $requests["goalID"];
+     }
 
     return $results;
 }
@@ -275,10 +275,10 @@ function getComments($requests)
 {
     $db = new pdodb;
     $results = [];
-    $goalID = $requests['goalID'];
 
-    $query = "SELECT * FROM Comment WHERE GoalID = '${goalID}' ORDER BY Upload, ID;";
-    $comments = $db->query($query);
+    $query = "SELECT * FROM Comment WHERE GoalID = ? ORDER BY Upload, ID;";
+    $bindings = array($requests["goalID"]);
+    $comments = $db->query($query, $bindings);
 
     $results["meta"]["ok"] = true;
     $results["meta"]["query"] = $query;
@@ -293,29 +293,25 @@ function addComment($requests)
 {
     $db = new pdodb;
     $results = [];
-    $goalid = $requests['goalID'];
-    $comment = $requests['comment'];
-    $username = $requests['me'];
-    $upload = date("Y/m/d");
 
     $results['meta']["requests"] = $requests;
     $results['meta']["action"] = "insert";
 
-    $query = "INSERT INTO Comment (Comment, Goalid, Username, Upload) VALUES ('${comment}',${goalid},'${username}','${upload}');";
-    $comment = $db->query($query);
+    $query = "INSERT INTO Comment (Comment, Goalid, Username, Upload) VALUES (?,?,?,?);";
+    $bindings = array($requests["comment"], $requests["goalID"], $requests["username"], date("y/d/m"));
+    $comment = $db->query($query, $bindings);
 
     if ($comment > 0) {
         $results['meta']["ok"] = true;
         $results['meta']["status"] = 201;
         $results['meta']["msg"] = "Created";
+
+        $query = "SELECT * FROM Comment LEFT JOIN (SELECT * FROM Following WHERE Username1 = ?) AS gf ON Comment.Username = username2 WHERE ID = ?;";
+        $bindings = array($requests["username"], $db->lastInsertId());
+        $comment = $db->query($query, $bindings);
+
+        $results["rows"] = $comment;
     }
-
-    $id = $db->lastInsertId();
-
-    $query = "SELECT * FROM Comment LEFT JOIN (SELECT * FROM Following WHERE Username1 = '${username}') AS gf ON Comment.Username = username2 WHERE ID=${id};";
-    $comment = $db->query($query);
-
-    $results["rows"] = $comment;
 
     return $results;
 }
@@ -324,19 +320,22 @@ function editComment($requests)
 {
     $db = new pdodb;
     $results = [];
-    $commentID = $requests["commentID"];
-    $comment = $requests['comment'];
-
-    $query = "UPDATE Comment SET Comment = '${comment}' WHERE ID = ${commentID};";
-    $row = $db->query($query);
 
     $results['meta']["action"] = "update";
-    $results['meta']["ok"] = ($row > 0);
 
-    $query = "SELECT * FROM Comment WHERE ID = ${commentID};";
-    $comment = $db->query($query);
+    $query = "UPDATE Comment SET Comment = ? WHERE ID = ?;";
+    $bindings = array($requests["comment"], $requests["commentID"]);
+    $row = $db->query($query, $bindings);
 
-    $results["rows"] = $comment;
+    if ($row > 0) {
+        $results['meta']["ok"] = true;
+
+        $query = "SELECT * FROM Comment WHERE ID = ?;";
+        $bindings = array($requests["commentID"]);
+        $comment = $db->query($query, $bindings);
+
+        $results["rows"] = $comment;
+    }
 
     return $results;
 }
@@ -345,15 +344,17 @@ function deleteComment($requests)
 {
     $db = new pdodb;
     $results = [];
-    $commentID = $requests["commentID"];
 
     $results['meta']["action"] = "delete";
 
-    $query = "DELETE FROM Comment WHERE ID = ${commentID};";
-    $row = $db->query($query);
+    $query = "DELETE FROM Comment WHERE ID = ?;";
+    $bindings = array($requests["commentID"]);
+    $row = $db->query($query, $bindings);
+    if ($row > 0) {
+        $results["meta"]["ok"] = true;
+        $results["rows"]["commentID"] = $requests["commentID"];
+    }
 
-    $results["meta"]["ok"] = ($row > 0);
-    $results["rows"]["commentID"] = $commentID;
 
     return $results;
 }
@@ -362,25 +363,25 @@ function addFriend($requests)
 {
     $db = new pdodb;
     $results = [];
-    $me = $requests['me'];
-    $user = $requests['user'];
 
     $results['meta']["request"] = $requests;
     $results['meta']["action"] = "insert";
 
-    $query = "INSERT INTO Following (Username1, Username2) VALUES ('${me}', '${user}');";
-    $follow = $db->query($query);
+    $query = "INSERT INTO Following (Username1, Username2) VALUES (? ?);";
+    $bindings = array($requests["me"], $requests["user"]);
+    $follow = $db->query($query, $bindings);
 
     if ($follow > 0) {
         $results['meta']["ok"] = true;
         $results['meta']["status"] = 201;
         $results['meta']["msg"] = "Created";
+
+        $query = "SELECT * FROM Following WHERE Username1 = ? AND Username2 = ?;";
+        $bindings = array($requests["me"], $requests["user"]);
+        $follow = $db->query($query, $bindings);
+
+        $results["rows"] = $follow;
     }
-
-    $query = "SELECT * FROM Following WHERE Username1 = '${me}' AND Username2 = '${user}';";
-    $follow = $db->query($query);
-
-    $results["rows"] = $follow;
 
     return $results;
 }
@@ -389,17 +390,18 @@ function deleteFriend($requests)
 {
     $db = new pdodb;
     $results = [];
-    $me = $requests['me'];
-    $user = $requests['user'];
 
     $results['meta']["action"] = "delete";
 
-    $query = "DELETE FROM Following WHERE Username1 = '${me}' AND Username2 = '${user}';";
-    $row = $db->query($query);
+    $query = "DELETE FROM Following WHERE Username1 = ? AND Username2 = ?;";
+    $bindings = array($requests["me"], $requests["user"]);
+    $row = $db->query($query, $bindings);
 
-    $results["meta"]["ok"] = ($row > 0);
+    if ($row > 0) {
+        $results["meta"]["ok"] = true;
 
-    $results["rows"]["user"] = $user;
+        $results["rows"]["user"] = $requests["user"];
+    }
 
     return $results;
 }
@@ -409,25 +411,24 @@ function addLike($requests)
     $db = new pdodb;
     $results = [];
 
-    $goalID = $requests['goalID'];
-    $me = $requests['me'];
-
     $results['meta']["request"] = $_REQUEST;
     $results['meta']["action"] = "insert";
 
-    $query = "INSERT INTO Liked (Username, goalID) VALUES ('${me}', ${goalID});";
-    $like = $db->query($query);
+    $query = "INSERT INTO Liked (Username, goalID) VALUES (?, ?);";
+    $bindings = array($requests["me"], $requests["goalID"]);
+    $like = $db->query($query, $bindings);
 
     if ($like > 0) {
         $results['meta']["ok"] = true;
         $results['meta']["status"] = 201;
         $results['meta']["msg"] = "Created";
+
+        $query = "SELECT * FROM Liked WHERE Username = ? AND goalID = ?;";
+        $bindings = array($requests["me"], $requests["goalID"]);
+        $like = $db->query($query, $bindings);
+
+        $results["rows"] = $like;
     }
-
-    $query = "SELECT * FROM Liked WHERE Username = '${me}' AND goalID = ${goalID};";
-    $like = $db->query($query);
-
-    $results["rows"] = $like;
 
     return $results;
 }
@@ -436,17 +437,17 @@ function deleteLike($requests)
 {
     $db = new pdodb;
     $results = [];
-    $goalID = $requests['goalID'];
-    $me = $requests['me'];
 
     $results['meta']["action"] = "delete";
 
-    $query = "DELETE FROM Liked WHERE Username = '${me}' AND GoalID = ${goalID};";
-    $row = $db->query($query);
+    $query = "DELETE FROM Liked WHERE Username = ? AND GoalID = ?;";
+    $bindings = array($requests["me"], $requests["goalID"]);
+    $row = $db->query($query, $bindings);
+    if ($row > 0) {
+        $results["meta"]["ok"] = true;
 
-    $results["meta"]["ok"] = ($row > 0);
-
-    $results["rows"]["goalID"] = $goalID;
+        $results["rows"]["goalID"] = $requests["goalID"];
+    }
 
     return $results;
 }
@@ -471,20 +472,22 @@ function addPicture($requests)
     if ($imagetype !== false) {
         // if everything is ok, try to upload file
         if (move_uploaded_file($_FILES["picture"]["tmp_name"], $file)) {
-            $query = "UPDATE User SET Picture = '${file}' WHERE Username = '${username}';";
-            $picture = $db->query($query);
+            $query = "UPDATE User SET Picture = ? WHERE Username = ?;";
+            $bindings = array($file, $username);
+            $picture = $db->query($query, $bindings);
 
             if ($picture > 0) {
                 $results['meta']["ok"] = true;
                 $results['meta']["status"] = 201;
                 $results['meta']["msg"] = "Created";
+
+                $query = "SELECT Username, Picture FROM User WHERE Username = ?;";
+                $bindings = array($username);
+                $picture = $db->query($query, $bindings);
+
+                $results["rows"] = $picture;
             }
 
-            $query = "SELECT Username, Picture FROM User WHERE Username = '${username}';";
-            $picture = $db->query($query);
-
-
-            $results["rows"] = $picture;
         } else {
             $results["meta"]["feedback"] = "Sorry, there was an error uploading your file.";
         }
@@ -502,21 +505,21 @@ function deletePicture($requests)
     $results["meta"]["request"] = $requests;
     $results['meta']["action"] = "delete";
 
-    $username = $requests['username'];
-
-    $query = "UPDATE User SET Picture = null WHERE Username = '${username}';";
-    $picture = $db->query($query);
+    $query = "UPDATE User SET Picture = null WHERE Username = ?;";
+    $bindings = array($requests["username"]);
+    $picture = $db->query($query, $bindings);
 
     if ($picture > 0) {
         $results['meta']["ok"] = true;
         $results['meta']["status"] = 200;
         $results['meta']["msg"] = "deleted";
+
+        $query = "SELECT * FROM User WHERE Username = ?;";
+        $bindings = array($requests["username"]);
+        $picture = $db->query($query, $bindings);
+
+        $results["rows"] = $picture;
     }
-
-    $query = "SELECT * FROM User WHERE Username = '${username}';";
-    $picture = $db->query($query);
-
-    $results["rows"] = $picture;
 
     return $results;
 }
