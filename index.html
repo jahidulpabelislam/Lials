@@ -5,49 +5,87 @@
     <meta name="author" content="Jahidul Pabel Islam">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lials</title>
+    <!-- The stylesheet for the site -->
     <link rel="stylesheet" type="text/css" href="lib/lials.css"/>
+    <!-- The favicon for the site -->
     <link rel="icon" href="images/favicon.png">
 </head>
 <body>
+
+<!-- The drag and drop area -->
+<div id="dropZone"><h1>Drag And Drop Image Here To Upload As Profile Picture</h1></div>
+
+<!-- The header with links to different sections(pages: home, profile, search) of page-->
 <header>
-    <div id="profileimgdiv">
-        <img id="profileimg" src="images/profile.svg" alt="Profile">
+    <!-- Div containing the profile image -->
+    <div>
+        <!-- image for profile -->
+        <img id="profileImg" src="images/profile.svg" alt="Profile">
     </div>
-    <div id="logoimgdiv">
-        <img class="logo" id="mobilelogo" src="images/mobilelogo.svg" alt="Logo">
+    <!-- Div containing the logos for small and big screen -->
+    <div>
+        <!-- the image for small screen -->
+        <img class="logo" id="mobileLogo" src="images/mobileLogo.svg" alt="Logo">
+        <!-- the image for big screen -->
         <img class="logo" id="logo" src="images/logo.svg" alt="Logo">
     </div>
-    <div id="searchdiv">
-        <input name="search" autofocus placeholder="Type to Search for Goals..." id="search" type="text">
+    <!-- Div containing the input for a search -->
+    <div id="searchDiv">
+        <!-- input to search a goal -->
+        <input id="search" type="text" placeholder="Type to Search for Goals...">
     </div>
 </header>
-<div id="writediv">
-    <form id="goalform">
-        <label for="goal">Enter your Goal.</label>
-        <input type="text" name="goal" id="goal" placeholder="I want to go USA!" autofocus>
-        <label for="due">Enter the date you plan to finish goal.</label>
-        <input type="date" name="due" id="due" placeholder="2016/06/06">
-        <button id="postgoal" type="button" value="Upload Goal">Upload Goal</button>
-    </form>
-</div>
+
+<!-- Div containing the information of any errors -->
 <div id="errors"></div>
+
+<!-- The Div containing the form for POSTing a goal -->
+<div id="goalFormDiv">
+    <!-- the form for POST a goal -->
+    <form id="goalForm">
+        <label for="goal">Enter your Goal.</label>
+        <input type="text" name="goal" id="goal" placeholder="I want to go USA!">
+        <label for="due">Enter the date you plan to finish goal.</label>
+        <input type="text" name="due" id="due" placeholder="2016/06/06">
+        <button id="postGoal" type="button" value="Upload Goal">Upload Goal</button>
+        <p id="goalFormFeedback"></p>
+    </form>
+
+</div>
+
+<!-- Div containing the profile information of a user -->
 <div id="profile"></div>
+
+<!-- Div containing the uploads from drag and drop -->
 <div id="uploads"></div>
+
+<!-- Div containing the goals -->
 <div id="goals"></div>
-<div id="userformdiv">
-    <form id="userform">
+
+<!-- Div containing the first log in/ sign up form -->
+<div id="userFormDiv">
+    <!-- The log in/sign up form -->
+    <form id="userForm">
         <label for="username">Username</label>
-        <input type="text" name="username" id="username" myusername" autofocus>
+        <input type="text" name="username" id="username" placeholder="myusername" autofocus>
         <label for="password">Password</label>
         <input type="password" name="password" id="password" placeholder="mypassword">
-        <button id="signupbutton" type="button" value="Sign Up">Sign Up</button>
-        <button id="loginbutton" type="button" value="Log In">Log In</button>
+        <button id="signUpButton" type="button" value="Sign Up">Sign Up</button>
+        <button id="logInButton" type="button" value="Log In">Log In</button>
     </form>
-    <p id="feedback"></p>
+    <!-- Where the feedback will go if any error -->
+    <p id="userFormFeedback"></p>
 </div>
-<div id="dropzone"></div>
+
+<!-- The Scripts -->
+<!-- the script needed for XHR -->
 <script type="text/javascript" src="lib/xhr.js"></script>
+
+<!-- the script for site -->
 <script type="text/javascript" src="lib/lials.js"></script>
+
+<!-- the script allowing drag and drop -->
 <script type="text/javascript" src="lib/drag.js"></script>
+
 </body>
 </html>

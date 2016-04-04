@@ -1,8 +1,14 @@
 <?php
-const DSN = "mysql:host=localhost;charset-UTF-8";
+//set up the variables for the connection to database for Lials
+//IP of database
+const IP = "localhost";
+//the username to database
 const USERNAME = "root";
+//the password for the user above
 const PASSWORD = "root";
-const DBASE = "Lials";
+//the database name for the Data for Lials
+const DATABASENAME = "Lials";
+//the query to create tables in database if there is none there
 const CREATEQUERY = "CREATE TABLE IF NOT EXISTS User (
                     Username VARCHAR(100) not null,
 					Password VARCHAR(500) not null,
@@ -15,7 +21,7 @@ const CREATEQUERY = "CREATE TABLE IF NOT EXISTS User (
 				    Due date not null,
 				    Upload date not null,
 				    Username VARCHAR(100) not null,
-					Complete boolean default false,
+					Completion boolean default false,
 				    PRIMARY KEY (ID),
 					CONSTRAINT UsernameFK FOREIGN KEY (Username) REFERENCES User(Username)
 				    ); CREATE TABLE IF NOT EXISTS Comment (
@@ -40,4 +46,3 @@ const CREATEQUERY = "CREATE TABLE IF NOT EXISTS User (
 					CONSTRAINT UsernameFK3 FOREIGN KEY (Username) REFERENCES User(Username),
 					CONSTRAINT GoalIDFK2 FOREIGN KEY (GoalID) REFERENCES Goal(ID)
 				    );";
-?>

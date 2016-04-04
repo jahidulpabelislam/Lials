@@ -20,7 +20,7 @@
    sodipodi:docname="profilepicture.svg"><metadata
      id="metadata15"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
      id="defs13" /><sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -43,12 +43,12 @@
      inkscape:current-layer="Layer_1" /><g
      id="g3334"
      transform="matrix(0.12884656,0,0,0.12884656,271.64873,-4.4179143)"
-     style="fill:#e6e6e6"><path
+     style="fill:#cccccc"><path
        d="m 513.81074,267.14184 c -103.36184,0 -187.75496,58.93026 -192.47574,132.84226 l 384.98817,0 C 701.59016,326.06598 617.16647,267.14184 513.81074,267.14184 Z"
        id="path7"
        inkscape:connector-curvature="0"
-       style="fill:#e6e6e6" /><path
+       style="fill:#cccccc" /><path
        d="m 610.41551,158.02578 c 0,57.17036 -42.93464,103.51594 -95.89543,103.51594 -52.96079,0 -95.89543,-46.34558 -95.89543,-103.51594 0,-57.17036 42.93464,-103.515943 95.89543,-103.515943 52.96813,0 95.89543,46.351703 95.89543,103.514723 z"
        id="path9"
        inkscape:connector-curvature="0"
-       style="fill:#e6e6e6" /></g></svg>
+       style="fill:#cccccc" /></g></svg>

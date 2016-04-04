@@ -20,7 +20,7 @@
    height="50"><metadata
      id="metadata9"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
      id="defs7" /><sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -44,4 +44,4 @@
      d="m 24.823299,3.9055552 c -13.818885,0 -24.67658082,8.5545458 -24.67658082,19.0832218 0,5.264337 3.94825292,10.528674 8.22552672,14.147906 -0.329021,3.619232 -5.9223792,5.264336 -8.22552672,7.567483 4.93531612,0 10.85769582,-1.645105 14.14790682,-4.277273 2.632168,0.658041 7.896505,1.645104 10.857694,1.645104 13.818887,0 24.67658,-8.554546 24.67658,-19.08322 0,-10.528676 -11.186715,-19.0832218 -25.0056,-19.0832218 z"
      id="path3"
      inkscape:connector-curvature="0"
-     style="fill:#e6e6e6" /></svg>
+     style="fill:#cccccc" /></svg>

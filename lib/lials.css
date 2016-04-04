@@ -6,60 +6,113 @@ body {
     text-align: center;
 }
 
-header, #userformdiv {
-    background-color: #00CC00;
-}
-
 header {
+    background-color: #43B929;
     height: 100px;
 }
 
-#goals, #writediv {
+#userFormDiv {
+    background-color: #43B929;
+}
+
+#goals {
     margin: 20px;
 }
 
-.goal, #profile {
-    max-width: 640px;
+#goalFormDiv {
+    margin: 20px;
+}
+
+.goal {
+    border: solid #43B929;
     background-color: white;
+    border-radius: 6px;
     margin: 20px auto auto;
     padding: 5px;
 }
 
-#profilediv {
-    background-color: #D3D3D3;
+#goalForm {
+    border-radius: 6px;
+    margin: auto;
+    background-color: #f8f8f8;
+    border: solid #e18b18;
 }
 
-.upload, .username, .images {
+#profile {
+    border-radius: 6px;
+    margin: 20px;
+    padding: 5px;
+    height: 100px;
+    background-color: #f4f4f4;
+    border: solid #FFFC31;
+}
+
+#userForm {
+    margin: 20px auto auto;
+    padding: 5px;
+}
+
+button {
+    border-radius: 6px;
+}
+
+button {
+    background-color: white;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}
+
+input:hover {
+    background-color: #f0f0f0;
+}
+
+#userForm button:hover {
+    background-color: #f0f0f0;
+}
+
+.upload {
     width: 33%;
     display: inline-block;
     text-align: right;
 }
 
-.username {
-    text-align: left;
-}
-
 .images {
-    text-align: center;
+    width: 33%;
+    display: inline-block;
 }
 
-#searchdiv {
+.username {
+    width: 33%;
+    display: inline-block;
+    text-align: left;
+    font-weight: bold;
+    color: #42ad29;
+}
+
+#searchDiv {
     width: 100%;
     height: 30%;
 }
 
-#profileimdiv {
+#profileImDiv {
     float: left;
 }
 
 .comment {
-    border-top: #00CC00 solid;
+    border-top: #43B929 solid;
 }
 
 header div {
     height: 70%;
-    width: 49%;
-    display: inline-block;
+    width: 50%;
+    float: left;
+}
+
+img#profilePicture {
+    max-width: 100%;
+    background-color: white;
 }
 
 img {
@@ -71,32 +124,142 @@ img {
 }
 
 input {
-    width: 99%;
+    width: 98%;
+    margin: 5px auto;
+    padding: 0;
 }
 
-#userformdiv {
+#userFormDiv {
     position: fixed;
-    left: 0;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
 }
 
-#dropzone {
+#dropZone {
+    z-index: 1;
     display: none;
     position: fixed;
     left: 0;
     bottom: 0;
     right: 0;
     top: 0;
-    background: #666;
     background: rgba(0, 0, 0, 0.4);
 }
 
+h1 {
+    font-size: 50px;
+    color: white;
+}
+
+#uploads {
+    margin: 20px;
+}
+
+.aUpload {
+    background-color: white;
+    border-radius: 6px;
+    margin: 20px auto auto;
+    padding: 5px;
+    border: solid #337CA0;
+}
+
+.aUpload * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.aUpload img {
+    width: 200px;
+    max-width: 100%;
+}
+
+#profile #profilePicture, #profile .username {
+    vertical-align: middle;
+    width: 25%;
+}
+
+#profile .images {
+    vertical-align: middle;
+    width: 13%;
+}
+
+#buttons {
+    display: inline-block;
+    vertical-align: middle;
+    width: 37%;
+}
+
+.failedUpload {
+    border: solid #cc151a;
+    background-color: white;
+    border-radius: 6px;
+    margin: 20px auto auto;
+    padding: 5px;
+}
+
+#errors {
+    margin: 20px;
+}
+
+#errors p {
+    border: solid #cc151a;
+    background-color: #cc151a;
+    border-radius: 6px;
+    margin: 20px auto auto;
+    padding: 5px;
+    text-align: left;
+    color: white;
+}
+#errors p button{
+    text-align: right;
+}
+
+#noGoals {
+    border: solid #43B929;
+    background-color: white;
+    border-radius: 6px;
+    margin: 20px auto auto;
+    padding: 5px;
+}
+
+#commentForm{
+    background-color: #f8f8f8;
+    border-radius: 6px;
+    border: solid #9D7E92;
+}
+
+#editCommentForm {
+    background-color: #f8f8f8;
+    border-radius: 6px;
+    border: solid #E50144;
+}
+
+#editGoalForm {
+    background-color: #f8f8f8;
+    border-radius: 6px;
+    border: solid #48C9AE;
+}
+
+#profile .username {
+    text-align: center;
+}
+
+/* make cursor a pointer for to let users know its clickable*/
+.images *, .username, button, header img {
+    cursor: pointer;
+}
+
 /* For mobile phones & some are for tablets */
+
+/* the search input box */
 #search {
     height: 30px;
     border: none;
+    margin: 0;
+    width: 100%;
+    background-color: white;
 }
 
 #logo, #profile {
@@ -105,26 +268,41 @@ input {
 
 /* For tablets and some are for desktops */
 @media only screen and (min-width: 640px) {
+    .goal, #profile, .aUpload, #goalForm, #userForm, #noGoals, .failedUpload, #errors p {
+        max-width: 640px;
+    }
+
     header {
         height: 70px;
     }
 
-    #searchdiv {
-        float: right;
-    }
-
-    header div, #searchdiv {
+    header div {
+        height: 100%;
         width: 33%;
     }
 
-    #search, #searchdiv, header div {
+    #searchDiv {
         height: 100%;
+        width: 33%;
+        float: right;
+    }
+
+    #search {
+        height: 100%;
+    }
+
+    #noGoals {
+        margin: auto;
+    }
+    
+    #profile {
+        margin: 20px auto;
     }
 }
 
 /* For desktops */
 @media only screen and (min-width: 768px) {
-    #mobilelogo {
+    #mobileLogo {
         display: none;
     }
 
