@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lials</title>
     <!-- The stylesheet for the site -->
-    <link rel="stylesheet" type="text/css" href="lib/lials.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/main.css"/>
     <!-- The favicon for the site -->
     <link rel="icon" href="images/favicon.png">
 </head>
@@ -46,7 +46,7 @@
         <label for="goal">Enter your Goal.</label>
         <input type="text" name="goal" id="goal" placeholder="I want to go USA!">
         <label for="due">Enter the date you plan to finish goal.</label>
-        <input type="text" name="due" id="due" placeholder="2016/06/06">
+        <input type="text" name="due" id="due" placeholder="2016-06-06">
         <button id="postGoal" type="button" value="Upload Goal">Upload Goal</button>
         <p id="goalFormFeedback"></p>
     </form>
@@ -81,11 +81,11 @@
 <!-- the script needed for XHR -->
 <script type="text/javascript" src="lib/xhr.js"></script>
 
-<!-- the script for site -->
-<script type="text/javascript" src="lib/lials.js"></script>
-
 <!-- the script allowing drag and drop -->
-<script type="text/javascript" src="lib/drag.js"></script>
+<script type="text/javascript" src="lib/dragNDrop.js"></script>
+
+<!-- the script for site -->
+<script type="text/javascript" src="lib/main.js"></script>
 
 </body>
 </html>

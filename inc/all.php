@@ -1,5 +1,10 @@
 <?php
-//using include to include both php files needed
-include 'connection.php';
-include 'database.php';
-include 'functions.php';
+/*
+ * Get all files need together
+ * @author 733474
+*/
+
+//using include to include all php files needed
+include __DIR__.'/connection.php';
+include __DIR__.'/database.php';
+include __DIR__.'/functions.php';

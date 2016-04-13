@@ -1,8 +1,14 @@
 <?php
-include '../inc/all.php';
+/*
+ * A RESTful API router.
+ * @author 733474
+*/
 
-//get the method verb
-$verb = $_SERVER['REQUEST_METHOD'];
+//include all files needed
+include __DIR__.'/../../inc/all.php';
+
+//get the method
+$method = $_SERVER['REQUEST_METHOD'];
 
 //get the path to decide what happens
 $path = explode('/', ltrim($_SERVER['PATH_INFO'], "/"));
@@ -13,12 +19,13 @@ $requests = $_REQUEST;
 //do relevant stuff with path[1]
 switch ($path[0]) {
     case "users":
-        switch ($verb) {
+        switch ($method) {
             case "GET":
                 $requests["username"] = $path[1];
                 $results = getUser($requests);
                 break;
-            case "POST":
+            case "PUT":
+                $requests["username"] = $path[1];
                 $results = addUser($requests);
                 break;
             case "PATCH":
@@ -26,11 +33,11 @@ switch ($path[0]) {
                 $results = editUser($requests);
                 break;
             default:
-                $results = methodNotAllowed();
+                $results["meta"] = methodNotAllowed();
         }
         break;
     case "goals":
-        switch ($verb) {
+        switch ($method) {
             case "GET":
                 $results = getGoals($requests);
                 break;
@@ -46,11 +53,11 @@ switch ($path[0]) {
                 $results = deleteGoal($requests);
                 break;
             default:
-                $results = methodNotAllowed();
+                $results["meta"] = methodNotAllowed();
         }
         break;
     case "comments":
-        switch ($verb) {
+        switch ($method) {
             case "GET":
                 $results = getComments($requests);
                 break;
@@ -66,11 +73,11 @@ switch ($path[0]) {
                 $results = deleteComment($requests);
                 break;
             default:
-                $results = methodNotAllowed();
+                $results["meta"] = methodNotAllowed();
         }
         break;
     case "follows":
-        switch ($verb) {
+        switch ($method) {
             case "POST":
                 $results = addFriend($requests);
                 break;
@@ -78,11 +85,11 @@ switch ($path[0]) {
                 $results = deleteFriend($requests);
                 break;
             default:
-                $results = methodNotAllowed();
+                $results["meta"] = methodNotAllowed();
         }
         break;
     case "likes":
-        switch ($verb) {
+        switch ($method) {
             case "POST":
                 $results = addLike($requests);
                 break;
@@ -90,11 +97,11 @@ switch ($path[0]) {
                 $results = deleteLike($requests);
                 break;
             default:
-                $results = methodNotAllowed();
+                $results["meta"] = methodNotAllowed();
         }
         break;
     case "pictures":
-        switch ($verb) {
+        switch ($method) {
             case "POST":
                 $results = addPicture($requests);
                 break;
@@ -102,17 +109,21 @@ switch ($path[0]) {
                 $results = deletePicture($requests);
                 break;
             default:
-                $results = methodNotAllowed();
+                $results["meta"] = methodNotAllowed();
         }
         break;
     default:
-        $results["meta"]["feedback"] = "Unrecognised URI.";
-        $results["meta"]["status"] = 404;
         $results["meta"]["ok"] = false;
+        $results["meta"]["status"] = 404;
+        $results["meta"]["feedback"] = "Unrecognised URI.";
+        $results["meta"]["message"] = "Not Found";
 }
 
+//send back the data provided
 $results['meta']["requests"] = $requests;
-$results['meta']["verb"] = $verb;
+//send back the method requested
+$results['meta']["method"] = $method;
+//send back the path they requested
 $results['meta']["path"] = $path;
 
 //check if requested to send json
@@ -122,11 +133,13 @@ $json = !(stripos($_SERVER['HTTP_ACCEPT'], 'application/json') === false);
 if (isset($results["meta"]["ok"]) && $results["meta"]["ok"] !== false) {
     $status = isset($results["meta"]["status"]) ? $results["meta"]["status"] : 200;
     $message = isset($results["meta"]["message"]) ? $results["meta"]["message"] : "OK";
-
 } else {
     $status = isset($results["meta"]["status"]) ? $results["meta"]["status"] : 500;
-    $message = isset($results["meta"]["message"]) ? $results["meta"]["message"] : "Error";
+    $message = isset($results["meta"]["message"]) ? $results["meta"]["message"] : "Internal Server Error";
 }
+
+$results["meta"]["status"] = $status;
+$results["meta"]["message"] = $message;
 
 header("HTTP/1.1 $status $message");
 

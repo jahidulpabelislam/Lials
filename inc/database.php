@@ -1,10 +1,25 @@
 <?php
-//a class which connects to a database to send and receeive data using variables defined in connectection.php file
-//a reuseable file for other projects
+/**
+ * Connects to a database and set up to send and receive data
+ * using application constants defined in connection.php file
+ * a reusable file for other projects
+ * MySQL specific
+ * @author 733474
+*/
+
 class pdodb
 {
     private $db;
 
+    /**
+     * Connects to a MySQL engine
+     * using application constants IP, USERNAME, and PASSWORD
+     * defined in connection.php.
+     *
+     * If the database with name of constant DATABASENAME doesn't exist,
+     * it is created using using the constant DATABASENAME and table/s are created using
+     * constant CREATEQUERY
+     */
     public function __construct()
     {
         $dsn = "mysql:host=" . IP . ";charset-UTF-8";
@@ -14,49 +29,51 @@ class pdodb
         } catch (PDOException $failure) {
             echo 'Connection failed: ' . $failure->getMessage();
         }
-        if (!pdodb::dbExists()) {
-            $this->db->query("CREATE DATABASE " . DATABASENAME);
-        }
-        $this->db->query("USE " . DATABASENAME);
         try {
+            $this->db->query("CREATE DATABASE IF NOT EXISTS " . DATABASENAME . ";");
+            $this->db->query("USE " . DATABASENAME);
             $this->db->query(CREATEQUERY);
         } catch (PDOException $failure) {
             echo 'Server failed: ' . $failure->getMessage();
         }
     }
 
-    private function dbExists()
+    /**
+     * Executes a sql query
+     * @param $query string the sql query to run
+     * @param null $bindings array array of any bindings to do with sql query
+     * @return array array of data
+     */
+    public function query($query, $bindings = null)
     {
-        $showQuery = "SHOW DATABASES LIKE '" . DATABASENAME . "'";
-        $showResult = $this->db->query($showQuery);
-        return (boolean)($showResult->fetch());
-    }
-
-    public function query($sql, $bindings = null)
-    {
+        $results = [];
         try {
+            //check if any bindings to execute
             if (isset($bindings)) {
-                $results = $this->db->prepare($sql);
-                $results->execute($bindings);
+                $result = $this->db->prepare($query);
+                $result->execute($bindings);
             } else {
-                $results = $this->db->query($sql);
+                $result = $this->db->query($query);
             }
 
-            if (strpos($sql, "SELECT") !== false) {
-                return $results->fetchAll(PDO::FETCH_ASSOC);
+            //if query was a select, return array of data
+            if (strpos($query, "SELECT") !== false) {
+                $results["rows"] = $result->fetchAll(PDO::FETCH_ASSOC);
             }
-
-            return $results->rowCount();
-
+            $results["count"] = $result->rowCount();
         } catch (PDOException $failure) {
-            $results = [];
             $results["meta"]["ok"] = false;
+            $results["meta"]["feedback"] = "Problem with Server.";
             $results["meta"]["exception"] = $failure;
-
-            return $results;
+            $results["meta"]['bindings'] = $bindings;
+            $results["meta"]['query'] = $query;
         }
+        return $results;
     }
 
+    /**
+     * @return int id of last inserted row of data
+     */
     public function lastInsertId()
     {
         return $this->db->lastInsertId();
