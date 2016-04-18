@@ -14,102 +14,102 @@ $method = $_SERVER['REQUEST_METHOD'];
 $path = explode('/', ltrim($_SERVER['PATH_INFO'], "/"));
 
 //gets the data into array
-$requests = $_REQUEST;
+$data = $_REQUEST;
 
 //do relevant stuff with path[1]
 switch ($path[0]) {
     case "users":
         switch ($method) {
             case "GET":
-                $requests["username"] = $path[1];
-                $results = getUser($requests);
+                $data["username"] = $path[1];
+                $results = getUser($data);
                 break;
             case "PUT":
-                $requests["username"] = $path[1];
-                $results = addUser($requests);
+                $data["username"] = $path[1];
+                $results = addUser($data);
                 break;
             case "PATCH":
-                $requests["username"] = $path[1];
-                $results = editUser($requests);
+                $data["username"] = $path[1];
+                $results = editUser($data);
                 break;
             default:
-                $results["meta"] = methodNotAllowed();
+                $results["meta"] = methodNotAllowed($method, $path);
         }
         break;
     case "goals":
         switch ($method) {
             case "GET":
-                $results = getGoals($requests);
+                $results = getGoals($data);
                 break;
             case "POST":
-                $results = addGoal($requests);
+                $results = addGoal($data);
                 break;
             case "PATCH":
-                $requests["goalID"] = $path[1];
-                $results = editGoal($requests);
+                $data["goalID"] = $path[1];
+                $results = editGoal($data);
                 break;
             case "DELETE":
-                $requests["goalID"] = $path[1];
-                $results = deleteGoal($requests);
+                $data["goalID"] = $path[1];
+                $results = deleteGoal($data);
                 break;
             default:
-                $results["meta"] = methodNotAllowed();
+                $results["meta"] = methodNotAllowed($method, $path);
         }
         break;
     case "comments":
         switch ($method) {
             case "GET":
-                $results = getComments($requests);
+                $results = getComments($data);
                 break;
             case "POST":
-                $results = addComment($requests);
+                $results = addComment($data);
                 break;
             case "PATCH":
-                $requests["commentID"] = $path[1];
-                $results = editComment($requests);
+                $data["commentID"] = $path[1];
+                $results = editComment($data);
                 break;
             case "DELETE":
-                $requests["commentID"] = $path[1];
-                $results = deleteComment($requests);
+                $data["commentID"] = $path[1];
+                $results = deleteComment($data);
                 break;
             default:
-                $results["meta"] = methodNotAllowed();
+                $results["meta"] = methodNotAllowed($method, $path);
         }
         break;
     case "follows":
         switch ($method) {
             case "POST":
-                $results = addFriend($requests);
+                $results = addFriend($data);
                 break;
             case "DELETE":
-                $results = deleteFriend($requests);
+                $results = deleteFriend($data);
                 break;
             default:
-                $results["meta"] = methodNotAllowed();
+                $results["meta"] = methodNotAllowed($method, $path);
         }
         break;
     case "likes":
         switch ($method) {
             case "POST":
-                $results = addLike($requests);
+                $results = addLike($data);
                 break;
             case "DELETE":
-                $results = deleteLike($requests);
+                $results = deleteLike($data);
                 break;
             default:
-                $results["meta"] = methodNotAllowed();
+                $results["meta"] = methodNotAllowed($method, $path);
         }
         break;
     case "pictures":
         switch ($method) {
             case "POST":
-                $results = addPicture($requests);
+                $results = addPicture($data);
                 break;
             case "DELETE";
-                $results = deletePicture($requests);
+                $results = deletePicture($data);
                 break;
             default:
-                $results["meta"] = methodNotAllowed();
+                $results["meta"] = methodNotAllowed($method, $path);
         }
         break;
     default:
@@ -120,14 +120,14 @@ switch ($path[0]) {
 }
 
 //send back the data provided
-$results['meta']["requests"] = $requests;
+$results['meta']["data"] = $data;
 //send back the method requested
 $results['meta']["method"] = $method;
 //send back the path they requested
 $results['meta']["path"] = $path;
 
 //check if requested to send json
-$json = !(stripos($_SERVER['HTTP_ACCEPT'], 'application/json') === false);
+$json = (stripos($_SERVER['HTTP_ACCEPT'], 'application/json') !== false);
 
 //check is everything was ok
 if (isset($results["meta"]["ok"]) && $results["meta"]["ok"] !== false) {

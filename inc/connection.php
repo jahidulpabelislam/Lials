@@ -38,16 +38,16 @@ const CREATEQUERY = "CREATE TABLE IF NOT EXISTS User (
 					Upload DATE NOT NULL,
 				    PRIMARY KEY (ID),
 					CONSTRAINT GoalIDFK FOREIGN KEY (GoalID) REFERENCES Goal(ID)
-				    ); CREATE TABLE IF NOT EXISTS Following (
+				    ); CREATE TABLE IF NOT EXISTS Follow (
 				    Username1 VARCHAR(100) NOT NULL,
-				    Username2 VARCHAR(100) NOT NULL,
-				    PRIMARY KEY (Username1, Username2),
-					CONSTRAINT Username1FK
-					FOREIGN KEY (Username1) REFERENCES User(Username),
-					CONSTRAINT Username2FK FOREIGN KEY (Username2) REFERENCES User(Username)
-				    ); CREATE TABLE IF NOT EXISTS Liked (
+				    Following VARCHAR(100) NOT NULL,
+				    PRIMARY KEY (Username1, Following),
+					CONSTRAINT UsernameFK2 FOREIGN KEY (Username1) REFERENCES User(Username),
+					CONSTRAINT FollowingFK FOREIGN KEY (Following) REFERENCES User(Username)
+				    ); CREATE TABLE IF NOT EXISTS Likes (
 				    Username VARCHAR(100) NOT NULL,
 				    GoalID INT NOT NULL,
+				    Liked BOOLEAN default true,
 				    PRIMARY KEY (Username, GoalID),
 					CONSTRAINT UsernameFK3 FOREIGN KEY (Username) REFERENCES User(Username),
 					CONSTRAINT GoalIDFK2 FOREIGN KEY (GoalID) REFERENCES Goal(ID)
