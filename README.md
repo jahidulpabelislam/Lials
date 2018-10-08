@@ -1,23 +1,25 @@
 # Lials
 
-For coursework during the second year of my degree (2016) I got tasked to create a Social Networking Site using no frameworks or libraries.
+For coursework during the second year of my degree (2015/16) I got tasked to create a social networking web application using no frameworks or libraries.
 
 I decided to base my site around Life Goals where users can upload their goals they want to complete for others to view and comment on.
 
-Created the Front end of the site using HTML5, CSS3 and JavaScript. And the Back end REST API using PHP and MySQL.
+The front-end of the site was developed using HTML5, CSS3 and JavaScript, and the backend REST API using PHP5 and MySQL.
 
-Capabilities
+#### Capabilities
 
-* Sign Up, Log In & Sign Out
-* Post, Edit & Delete a Goal
-* Show a Goal as Complete or Not Complete
-* Like or Unlike a Goal
-* Comment on a Goal
-* Edit & Delete a Comment
-* Search for Goal/s
-* Make Profile Private or Not Private (Doesn't Do Much Except Change Icon & on Database
-* Upload a Profile Picture by Drag and Drop of file/s (Only working on Google Chrome)
-* Delete Profile Picture
-* Follow or Unfollow a User
-* View Goals of users you are following
-* View Profile of Users
+
+* Sign up, log in & sign out
+* Post, edit & delete a goal
+* Show a goal as complete or not complete
+* Like or unlike a goal
+* Comment, edit & delete a comment on a goal
+* Search for goal/s
+* Make profile private or not private (doesn't do much except change icon & on database
+* Upload a profile picture by drag and drop of file/s (only works on Google Chrome)
+* Delete profile picture
+* Follow or unfollow a user
+* View goals of users you are following
+* View profile of users
+
+#### Site not very secure so don't use any sensitive data.
